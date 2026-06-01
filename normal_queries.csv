@@ -1,0 +1,1501 @@
+query,user,ip
+INSERT INTO orders (id, name) VALUES (429, 'test_user'),admin,192.168.1.22
+DELETE FROM logs WHERE id = 698,alice,192.168.1.28
+SELECT id FROM products WHERE id=397,charlie,192.168.1.32
+UPDATE sessions SET name = 'updated' WHERE id = 5,svc,10.0.0.41
+SELECT a.id, b.name FROM notifications a JOIN inventory b ON a.id = b.id WHERE a.id > 410,guest,10.0.0.32
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1362,admin,192.168.1.63
+SELECT a.id, b.name FROM payments a JOIN sessions b ON a.id = b.id WHERE a.id > 79,dev,192.168.1.54
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 403,ops,192.168.1.42
+SELECT id FROM inventory WHERE id=570,bob,192.168.1.75
+SELECT user_id FROM users WHERE id=578,svc,10.0.0.8
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 45,charlie,192.168.1.42
+SELECT name FROM products WHERE id=422,dev,192.168.1.65
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 37,bob,192.168.1.32
+SELECT a.id, b.name FROM products a JOIN orders b ON a.id = b.id WHERE a.id > 26,guest,192.168.1.67
+SELECT * FROM orders WHERE id > 878 AND id < 460,charlie,10.0.0.41
+UPDATE reviews SET name = 'updated' WHERE id = 184,analyst,10.0.0.24
+SELECT * FROM orders WHERE id > 615 AND id < 529,svc,10.0.0.15
+SELECT a.id, b.name FROM users a JOIN inventory b ON a.id = b.id WHERE a.id > 747,bob,10.0.0.27
+SELECT a.id, b.name FROM reviews a JOIN logs b ON a.id = b.id WHERE a.id > 281,dev,192.168.1.18
+INSERT INTO payments (id, name) VALUES (385, 'test_user'),bob,10.0.0.41
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,charlie,192.168.1.75
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4487,ops,192.168.1.55
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4502,alice,10.0.0.17
+SELECT * FROM users WHERE id > 819 AND id < 751,admin,192.168.1.56
+SELECT stock FROM notifications WHERE id=316,charlie,10.0.0.38
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,ops,192.168.1.29
+DELETE FROM payments WHERE id = 225,analyst,192.168.1.58
+SELECT * FROM logs WHERE id > 203 AND id < 743,bob,10.0.0.35
+SELECT a.id, b.name FROM products a JOIN reviews b ON a.id = b.id WHERE a.id > 603,analyst,192.168.1.31
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 50,charlie,192.168.1.67
+SELECT * FROM sessions WHERE id > 64 AND id < 1001,charlie,10.0.0.48
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 22,guest,10.0.0.2
+INSERT INTO logs (id, name) VALUES (83, 'test_user'),alice,10.0.0.17
+INSERT INTO payments (id, name) VALUES (891, 'test_user'),ops,192.168.1.44
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,10.0.0.1
+SELECT a.id, b.name FROM sessions a JOIN sessions b ON a.id = b.id WHERE a.id > 442,svc,192.168.1.65
+SELECT created_at FROM notifications WHERE id=225,analyst,192.168.1.42
+SELECT email FROM products WHERE id=270,charlie,192.168.1.58
+INSERT INTO products (id, name) VALUES (613, 'test_user'),ops,192.168.1.55
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,svc,192.168.1.32
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,svc,192.168.1.40
+INSERT INTO users (id, name) VALUES (284, 'test_user'),guest,192.168.1.62
+SELECT a.id, b.name FROM products a JOIN reviews b ON a.id = b.id WHERE a.id > 204,admin,10.0.0.35
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 7,admin,192.168.1.11
+SELECT user_id FROM products WHERE id=983,alice,10.0.0.41
+SELECT name FROM products WHERE id=49,admin,10.0.0.11
+SELECT user_id FROM payments WHERE id=874,bob,192.168.1.28
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 4,charlie,10.0.0.34
+SELECT a.id, b.name FROM logs a JOIN products b ON a.id = b.id WHERE a.id > 228,analyst,192.168.1.32
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,192.168.1.14
+UPDATE users SET name = 'updated' WHERE id = 567,dev,192.168.1.38
+SELECT * FROM payments ORDER BY created_at DESC LIMIT 30,admin,10.0.0.12
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2060,svc,10.0.0.45
+INSERT INTO logs (id, name) VALUES (976, 'test_user'),analyst,192.168.1.38
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,bob,192.168.1.56
+SELECT a.id, b.name FROM products a JOIN users b ON a.id = b.id WHERE a.id > 28,charlie,192.168.1.14
+SELECT a.id, b.name FROM payments a JOIN sessions b ON a.id = b.id WHERE a.id > 540,bob,10.0.0.44
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 9,admin,192.168.1.74
+SELECT a.id, b.name FROM logs a JOIN orders b ON a.id = b.id WHERE a.id > 489,bob,10.0.0.49
+SELECT status FROM users WHERE id=337,dev,192.168.1.18
+SELECT amount FROM payments WHERE id=692,guest,192.168.1.16
+SELECT a.id, b.name FROM payments a JOIN sessions b ON a.id = b.id WHERE a.id > 839,svc,10.0.0.4
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 47,alice,192.168.1.75
+SELECT amount FROM orders WHERE id=598,svc,192.168.1.30
+SELECT * FROM notifications WHERE id > 650 AND id < 856,alice,10.0.0.15
+SELECT name FROM orders WHERE id=546,analyst,10.0.0.30
+SELECT stock FROM orders WHERE id=805,charlie,192.168.1.76
+SELECT a.id, b.name FROM sessions a JOIN products b ON a.id = b.id WHERE a.id > 673,guest,192.168.1.52
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1483,analyst,192.168.1.59
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 10,analyst,192.168.1.58
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,charlie,192.168.1.72
+INSERT INTO reviews (id, name) VALUES (768, 'test_user'),analyst,10.0.0.43
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,10.0.0.29
+SELECT * FROM products WHERE id > 829 AND id < 374,admin,10.0.0.46
+INSERT INTO users (id, name) VALUES (486, 'test_user'),analyst,192.168.1.63
+SELECT a.id, b.name FROM logs a JOIN logs b ON a.id = b.id WHERE a.id > 418,admin,192.168.1.77
+SELECT price FROM orders WHERE id=600,dev,192.168.1.56
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,charlie,192.168.1.60
+SELECT email FROM inventory WHERE id=272,alice,192.168.1.22
+SELECT stock FROM logs WHERE id=681,analyst,192.168.1.69
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,charlie,192.168.1.12
+SELECT amount FROM logs WHERE id=200,admin,192.168.1.52
+INSERT INTO inventory (id, name) VALUES (888, 'test_user'),alice,192.168.1.73
+SELECT * FROM payments ORDER BY created_at DESC LIMIT 24,dev,192.168.1.31
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,guest,192.168.1.77
+SELECT * FROM products WHERE id > 240 AND id < 116,alice,10.0.0.22
+UPDATE inventory SET name = 'updated' WHERE id = 110,bob,192.168.1.14
+SELECT * FROM products WHERE id > 47 AND id < 898,dev,192.168.1.58
+SELECT created_at FROM inventory WHERE id=501,dev,192.168.1.22
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,admin,10.0.0.39
+SELECT * FROM orders WHERE id > 853 AND id < 126,analyst,192.168.1.12
+SELECT a.id, b.name FROM inventory a JOIN users b ON a.id = b.id WHERE a.id > 943,admin,10.0.0.6
+SELECT * FROM payments WHERE id > 112 AND id < 940,guest,10.0.0.7
+SELECT price FROM payments WHERE id=575,guest,192.168.1.48
+SELECT a.id, b.name FROM products a JOIN users b ON a.id = b.id WHERE a.id > 993,guest,10.0.0.49
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,bob,192.168.1.17
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,192.168.1.30
+UPDATE logs SET name = 'updated' WHERE id = 759,alice,192.168.1.27
+UPDATE payments SET name = 'updated' WHERE id = 219,admin,192.168.1.23
+UPDATE users SET name = 'updated' WHERE id = 60,charlie,10.0.0.14
+SELECT created_at FROM payments WHERE id=585,bob,192.168.1.51
+SELECT * FROM orders WHERE id > 971 AND id < 1033,bob,10.0.0.32
+SELECT a.id, b.name FROM sessions a JOIN orders b ON a.id = b.id WHERE a.id > 272,alice,10.0.0.5
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 43,admin,192.168.1.54
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 14,guest,192.168.1.39
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 6,charlie,192.168.1.32
+UPDATE payments SET name = 'updated' WHERE id = 447,admin,10.0.0.33
+SELECT * FROM payments WHERE id > 804 AND id < 616,ops,192.168.1.59
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 43,bob,192.168.1.79
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4913,alice,192.168.1.51
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 898,charlie,192.168.1.17
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,10.0.0.25
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 19,alice,192.168.1.65
+SELECT a.id, b.name FROM notifications a JOIN orders b ON a.id = b.id WHERE a.id > 911,ops,10.0.0.40
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2277,alice,10.0.0.23
+SELECT a.id, b.name FROM sessions a JOIN notifications b ON a.id = b.id WHERE a.id > 900,alice,192.168.1.39
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,charlie,10.0.0.7
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 47,admin,10.0.0.29
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,admin,10.0.0.28
+INSERT INTO orders (id, name) VALUES (534, 'test_user'),guest,10.0.0.13
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 7,svc,192.168.1.34
+SELECT a.id, b.name FROM payments a JOIN notifications b ON a.id = b.id WHERE a.id > 173,dev,192.168.1.51
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,10.0.0.13
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,svc,192.168.1.46
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,bob,192.168.1.15
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,analyst,192.168.1.24
+SELECT a.id, b.name FROM inventory a JOIN products b ON a.id = b.id WHERE a.id > 407,alice,10.0.0.34
+UPDATE products SET name = 'updated' WHERE id = 287,svc,192.168.1.43
+DELETE FROM notifications WHERE id = 347,alice,10.0.0.8
+SELECT * FROM users WHERE id > 659 AND id < 895,svc,192.168.1.26
+UPDATE sessions SET name = 'updated' WHERE id = 29,guest,192.168.1.36
+SELECT * FROM orders WHERE id > 789 AND id < 708,charlie,192.168.1.54
+SELECT * FROM users WHERE id > 372 AND id < 1033,charlie,192.168.1.18
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 350,admin,192.168.1.16
+SELECT a.id, b.name FROM users a JOIN payments b ON a.id = b.id WHERE a.id > 24,bob,10.0.0.16
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 39,analyst,10.0.0.25
+SELECT * FROM logs WHERE id > 71 AND id < 1001,admin,10.0.0.28
+INSERT INTO logs (id, name) VALUES (197, 'test_user'),charlie,10.0.0.29
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4123,ops,192.168.1.20
+SELECT a.id, b.name FROM products a JOIN inventory b ON a.id = b.id WHERE a.id > 487,analyst,192.168.1.58
+UPDATE sessions SET name = 'updated' WHERE id = 649,guest,192.168.1.47
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 48,ops,10.0.0.35
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 17,alice,192.168.1.13
+SELECT amount FROM users WHERE id=506,alice,192.168.1.43
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 40,analyst,192.168.1.65
+SELECT * FROM sessions WHERE id > 671 AND id < 497,ops,192.168.1.54
+UPDATE payments SET name = 'updated' WHERE id = 496,dev,192.168.1.76
+SELECT * FROM orders WHERE id > 257 AND id < 575,svc,10.0.0.43
+SELECT status FROM sessions WHERE id=146,svc,10.0.0.1
+SELECT a.id, b.name FROM reviews a JOIN users b ON a.id = b.id WHERE a.id > 488,guest,10.0.0.20
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,ops,192.168.1.72
+SELECT * FROM reviews ORDER BY created_at DESC LIMIT 31,alice,192.168.1.76
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,charlie,10.0.0.45
+UPDATE inventory SET name = 'updated' WHERE id = 607,guest,192.168.1.30
+SELECT * FROM users WHERE id > 894 AND id < 161,ops,192.168.1.68
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,ops,192.168.1.61
+SELECT status FROM users WHERE id=940,svc,192.168.1.55
+SELECT price FROM users WHERE id=18,svc,10.0.0.16
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 40,admin,10.0.0.47
+SELECT user_id FROM inventory WHERE id=358,dev,192.168.1.57
+SELECT a.id, b.name FROM inventory a JOIN reviews b ON a.id = b.id WHERE a.id > 212,guest,192.168.1.29
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,guest,10.0.0.37
+SELECT email FROM logs WHERE id=436,guest,192.168.1.12
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1260,analyst,192.168.1.40
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 3,admin,10.0.0.23
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,analyst,10.0.0.31
+DELETE FROM reviews WHERE id = 996,guest,10.0.0.20
+SELECT * FROM reviews WHERE id > 414 AND id < 225,charlie,10.0.0.18
+SELECT a.id, b.name FROM orders a JOIN reviews b ON a.id = b.id WHERE a.id > 707,admin,10.0.0.27
+SELECT * FROM orders WHERE id > 60 AND id < 341,charlie,10.0.0.19
+SELECT a.id, b.name FROM logs a JOIN notifications b ON a.id = b.id WHERE a.id > 238,bob,192.168.1.65
+SELECT * FROM users ORDER BY created_at DESC LIMIT 33,analyst,192.168.1.18
+DELETE FROM payments WHERE id = 837,guest,10.0.0.32
+SELECT email FROM products WHERE id=522,guest,192.168.1.32
+DELETE FROM inventory WHERE id = 804,dev,10.0.0.1
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,ops,10.0.0.3
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 16,dev,10.0.0.29
+SELECT price FROM products WHERE id=257,ops,10.0.0.28
+SELECT amount FROM notifications WHERE id=812,alice,192.168.1.64
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 40,admin,192.168.1.49
+SELECT a.id, b.name FROM products a JOIN users b ON a.id = b.id WHERE a.id > 219,ops,10.0.0.31
+SELECT * FROM users WHERE id > 272 AND id < 647,admin,192.168.1.76
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,192.168.1.50
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 9,svc,10.0.0.30
+INSERT INTO orders (id, name) VALUES (540, 'test_user'),alice,10.0.0.21
+UPDATE sessions SET name = 'updated' WHERE id = 335,admin,10.0.0.30
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1005,dev,10.0.0.5
+SELECT * FROM inventory WHERE id > 508 AND id < 1061,ops,192.168.1.39
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,ops,10.0.0.20
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,svc,10.0.0.46
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 10,charlie,10.0.0.10
+SELECT * FROM users WHERE id > 699 AND id < 1100,ops,192.168.1.73
+SELECT * FROM orders WHERE id > 419 AND id < 492,analyst,192.168.1.54
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 10,dev,10.0.0.8
+INSERT INTO orders (id, name) VALUES (734, 'test_user'),admin,10.0.0.12
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,10.0.0.43
+SELECT a.id, b.name FROM sessions a JOIN reviews b ON a.id = b.id WHERE a.id > 289,alice,192.168.1.65
+SELECT a.id, b.name FROM sessions a JOIN orders b ON a.id = b.id WHERE a.id > 787,guest,10.0.0.47
+UPDATE users SET name = 'updated' WHERE id = 372,svc,10.0.0.45
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3225,alice,10.0.0.20
+SELECT * FROM users WHERE id > 413 AND id < 796,ops,192.168.1.50
+DELETE FROM products WHERE id = 569,admin,192.168.1.12
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,10.0.0.38
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,10.0.0.4
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4578,alice,10.0.0.17
+INSERT INTO sessions (id, name) VALUES (843, 'test_user'),dev,10.0.0.26
+UPDATE sessions SET name = 'updated' WHERE id = 750,svc,192.168.1.18
+SELECT * FROM notifications WHERE id > 789 AND id < 506,ops,192.168.1.45
+SELECT * FROM users WHERE id > 573 AND id < 208,alice,192.168.1.25
+SELECT created_at FROM sessions WHERE id=975,bob,10.0.0.14
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1641,ops,10.0.0.22
+SELECT a.id, b.name FROM notifications a JOIN sessions b ON a.id = b.id WHERE a.id > 754,analyst,192.168.1.33
+UPDATE products SET name = 'updated' WHERE id = 756,alice,192.168.1.15
+SELECT a.id, b.name FROM inventory a JOIN inventory b ON a.id = b.id WHERE a.id > 505,ops,192.168.1.42
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,10.0.0.24
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 47,admin,10.0.0.20
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 1,ops,10.0.0.27
+DELETE FROM reviews WHERE id = 420,analyst,192.168.1.71
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,guest,192.168.1.25
+DELETE FROM payments WHERE id = 651,bob,192.168.1.57
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,admin,192.168.1.27
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 25,charlie,192.168.1.22
+UPDATE logs SET name = 'updated' WHERE id = 844,guest,10.0.0.42
+INSERT INTO reviews (id, name) VALUES (419, 'test_user'),ops,10.0.0.4
+SELECT price FROM reviews WHERE id=516,svc,10.0.0.2
+UPDATE notifications SET name = 'updated' WHERE id = 274,svc,192.168.1.53
+SELECT * FROM reviews WHERE id > 451 AND id < 195,ops,192.168.1.68
+SELECT amount FROM notifications WHERE id=495,analyst,10.0.0.14
+UPDATE inventory SET name = 'updated' WHERE id = 179,guest,192.168.1.45
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 29,admin,192.168.1.46
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 40,guest,192.168.1.19
+SELECT id FROM logs WHERE id=68,bob,10.0.0.20
+SELECT * FROM payments ORDER BY created_at DESC LIMIT 29,analyst,10.0.0.8
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 292,alice,10.0.0.28
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 27,guest,192.168.1.72
+SELECT * FROM logs WHERE id > 610 AND id < 506,guest,10.0.0.35
+UPDATE orders SET name = 'updated' WHERE id = 885,guest,192.168.1.22
+SELECT stock FROM payments WHERE id=534,bob,192.168.1.52
+UPDATE inventory SET name = 'updated' WHERE id = 864,bob,192.168.1.46
+SELECT stock FROM reviews WHERE id=980,svc,192.168.1.76
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,alice,192.168.1.34
+SELECT a.id, b.name FROM payments a JOIN logs b ON a.id = b.id WHERE a.id > 49,dev,10.0.0.19
+UPDATE payments SET name = 'updated' WHERE id = 317,guest,192.168.1.45
+UPDATE logs SET name = 'updated' WHERE id = 571,alice,192.168.1.40
+SELECT * FROM notifications WHERE id > 500 AND id < 375,bob,192.168.1.30
+UPDATE payments SET name = 'updated' WHERE id = 892,ops,10.0.0.47
+UPDATE users SET name = 'updated' WHERE id = 938,svc,192.168.1.30
+DELETE FROM payments WHERE id = 339,dev,10.0.0.46
+DELETE FROM reviews WHERE id = 365,guest,10.0.0.12
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1023,admin,192.168.1.73
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4116,charlie,192.168.1.32
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 47,guest,192.168.1.74
+UPDATE reviews SET name = 'updated' WHERE id = 152,dev,10.0.0.1
+SELECT * FROM payments WHERE id > 366 AND id < 132,alice,192.168.1.51
+UPDATE users SET name = 'updated' WHERE id = 49,charlie,192.168.1.59
+UPDATE sessions SET name = 'updated' WHERE id = 411,dev,192.168.1.43
+SELECT a.id, b.name FROM users a JOIN sessions b ON a.id = b.id WHERE a.id > 749,alice,10.0.0.44
+SELECT * FROM payments WHERE id > 704 AND id < 879,alice,192.168.1.20
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 717,analyst,192.168.1.72
+SELECT created_at FROM notifications WHERE id=706,ops,10.0.0.3
+SELECT created_at FROM notifications WHERE id=233,ops,10.0.0.45
+DELETE FROM logs WHERE id = 329,dev,10.0.0.12
+SELECT * FROM sessions WHERE id > 654 AND id < 175,bob,192.168.1.54
+SELECT * FROM notifications WHERE id > 765 AND id < 962,analyst,192.168.1.67
+INSERT INTO orders (id, name) VALUES (744, 'test_user'),ops,10.0.0.33
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,guest,192.168.1.76
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 17,bob,192.168.1.35
+SELECT price FROM notifications WHERE id=6,charlie,192.168.1.36
+DELETE FROM products WHERE id = 2,alice,192.168.1.75
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 37,dev,192.168.1.10
+DELETE FROM notifications WHERE id = 307,ops,192.168.1.13
+SELECT * FROM users ORDER BY created_at DESC LIMIT 8,ops,192.168.1.43
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 1,analyst,192.168.1.59
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 23,admin,192.168.1.74
+SELECT price FROM logs WHERE id=509,charlie,192.168.1.13
+DELETE FROM orders WHERE id = 574,analyst,192.168.1.72
+SELECT a.id, b.name FROM notifications a JOIN reviews b ON a.id = b.id WHERE a.id > 846,svc,192.168.1.50
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 8,guest,192.168.1.51
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,admin,10.0.0.47
+SELECT stock FROM orders WHERE id=597,alice,192.168.1.16
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,svc,10.0.0.47
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 891,analyst,10.0.0.28
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 49,admin,192.168.1.71
+INSERT INTO reviews (id, name) VALUES (227, 'test_user'),dev,10.0.0.39
+SELECT a.id, b.name FROM inventory a JOIN payments b ON a.id = b.id WHERE a.id > 737,guest,10.0.0.46
+SELECT user_id FROM orders WHERE id=100,analyst,192.168.1.36
+DELETE FROM inventory WHERE id = 565,bob,192.168.1.35
+SELECT a.id, b.name FROM sessions a JOIN reviews b ON a.id = b.id WHERE a.id > 914,analyst,192.168.1.43
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,bob,192.168.1.68
+SELECT a.id, b.name FROM users a JOIN sessions b ON a.id = b.id WHERE a.id > 595,bob,192.168.1.49
+SELECT name FROM payments WHERE id=418,admin,10.0.0.40
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,alice,192.168.1.26
+SELECT a.id, b.name FROM orders a JOIN payments b ON a.id = b.id WHERE a.id > 947,analyst,192.168.1.37
+SELECT a.id, b.name FROM notifications a JOIN users b ON a.id = b.id WHERE a.id > 92,ops,192.168.1.18
+SELECT * FROM logs WHERE id > 858 AND id < 206,guest,192.168.1.40
+SELECT a.id, b.name FROM orders a JOIN orders b ON a.id = b.id WHERE a.id > 880,guest,192.168.1.66
+SELECT user_id FROM inventory WHERE id=779,ops,192.168.1.76
+UPDATE users SET name = 'updated' WHERE id = 91,analyst,192.168.1.34
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,192.168.1.63
+INSERT INTO products (id, name) VALUES (271, 'test_user'),admin,192.168.1.43
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4180,ops,192.168.1.49
+SELECT id FROM reviews WHERE id=437,bob,192.168.1.78
+SELECT amount FROM payments WHERE id=411,dev,10.0.0.34
+SELECT status FROM logs WHERE id=568,bob,192.168.1.19
+SELECT a.id, b.name FROM orders a JOIN products b ON a.id = b.id WHERE a.id > 564,ops,10.0.0.42
+UPDATE products SET name = 'updated' WHERE id = 199,admin,192.168.1.35
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 8,guest,192.168.1.51
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1627,guest,10.0.0.2
+SELECT a.id, b.name FROM inventory a JOIN products b ON a.id = b.id WHERE a.id > 775,ops,10.0.0.43
+SELECT a.id, b.name FROM products a JOIN notifications b ON a.id = b.id WHERE a.id > 759,guest,192.168.1.67
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,admin,192.168.1.54
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2537,bob,10.0.0.41
+SELECT a.id, b.name FROM inventory a JOIN reviews b ON a.id = b.id WHERE a.id > 307,bob,192.168.1.14
+SELECT a.id, b.name FROM notifications a JOIN inventory b ON a.id = b.id WHERE a.id > 960,alice,10.0.0.33
+SELECT * FROM sessions WHERE id > 446 AND id < 503,analyst,192.168.1.32
+SELECT email FROM users WHERE id=936,alice,192.168.1.18
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 3,guest,192.168.1.26
+INSERT INTO orders (id, name) VALUES (131, 'test_user'),bob,10.0.0.2
+SELECT a.id, b.name FROM sessions a JOIN products b ON a.id = b.id WHERE a.id > 953,ops,192.168.1.71
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,guest,192.168.1.31
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 8,bob,192.168.1.23
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 464,charlie,192.168.1.17
+SELECT * FROM logs WHERE id > 13 AND id < 538,dev,10.0.0.1
+INSERT INTO payments (id, name) VALUES (679, 'test_user'),ops,10.0.0.1
+DELETE FROM logs WHERE id = 429,ops,10.0.0.2
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 34,dev,192.168.1.43
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 6,guest,192.168.1.18
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2065,analyst,192.168.1.76
+SELECT amount FROM notifications WHERE id=250,admin,192.168.1.13
+SELECT a.id, b.name FROM payments a JOIN notifications b ON a.id = b.id WHERE a.id > 120,admin,10.0.0.46
+SELECT * FROM notifications WHERE id > 892 AND id < 981,analyst,192.168.1.57
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 45,admin,10.0.0.42
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,guest,192.168.1.12
+DELETE FROM inventory WHERE id = 411,alice,192.168.1.48
+UPDATE inventory SET name = 'updated' WHERE id = 783,bob,192.168.1.33
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2019,ops,10.0.0.15
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,guest,192.168.1.76
+SELECT a.id, b.name FROM payments a JOIN sessions b ON a.id = b.id WHERE a.id > 123,guest,10.0.0.28
+UPDATE reviews SET name = 'updated' WHERE id = 961,charlie,10.0.0.12
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,guest,192.168.1.14
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,svc,10.0.0.8
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1872,dev,192.168.1.70
+DELETE FROM products WHERE id = 77,dev,10.0.0.37
+SELECT price FROM users WHERE id=717,admin,192.168.1.64
+SELECT * FROM orders WHERE id > 584 AND id < 445,dev,10.0.0.14
+UPDATE reviews SET name = 'updated' WHERE id = 690,charlie,10.0.0.35
+SELECT a.id, b.name FROM payments a JOIN users b ON a.id = b.id WHERE a.id > 362,dev,192.168.1.68
+UPDATE inventory SET name = 'updated' WHERE id = 199,bob,192.168.1.22
+SELECT a.id, b.name FROM products a JOIN reviews b ON a.id = b.id WHERE a.id > 952,dev,192.168.1.74
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 23,alice,10.0.0.35
+SELECT * FROM payments ORDER BY created_at DESC LIMIT 28,ops,10.0.0.13
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,svc,10.0.0.33
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,admin,192.168.1.77
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,guest,192.168.1.76
+SELECT a.id, b.name FROM orders a JOIN inventory b ON a.id = b.id WHERE a.id > 801,admin,192.168.1.36
+SELECT email FROM reviews WHERE id=779,admin,10.0.0.4
+SELECT price FROM payments WHERE id=831,ops,10.0.0.22
+SELECT status FROM orders WHERE id=421,admin,192.168.1.35
+SELECT * FROM reviews WHERE id > 402 AND id < 621,ops,192.168.1.41
+SELECT * FROM products WHERE id > 28 AND id < 345,alice,10.0.0.1
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 5,ops,10.0.0.21
+UPDATE notifications SET name = 'updated' WHERE id = 235,dev,192.168.1.21
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4600,dev,192.168.1.54
+SELECT status FROM products WHERE id=179,guest,10.0.0.2
+UPDATE orders SET name = 'updated' WHERE id = 853,alice,192.168.1.38
+SELECT a.id, b.name FROM orders a JOIN payments b ON a.id = b.id WHERE a.id > 733,guest,10.0.0.19
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 10,bob,10.0.0.21
+SELECT * FROM users ORDER BY created_at DESC LIMIT 34,svc,192.168.1.26
+SELECT a.id, b.name FROM payments a JOIN sessions b ON a.id = b.id WHERE a.id > 67,svc,10.0.0.12
+SELECT created_at FROM inventory WHERE id=62,svc,10.0.0.15
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 30,admin,10.0.0.22
+SELECT status FROM logs WHERE id=300,charlie,192.168.1.22
+SELECT name FROM payments WHERE id=32,alice,192.168.1.77
+SELECT a.id, b.name FROM notifications a JOIN orders b ON a.id = b.id WHERE a.id > 264,svc,192.168.1.11
+SELECT amount FROM logs WHERE id=772,alice,192.168.1.33
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 10,guest,192.168.1.13
+SELECT a.id, b.name FROM inventory a JOIN users b ON a.id = b.id WHERE a.id > 634,svc,192.168.1.15
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2975,analyst,192.168.1.29
+SELECT price FROM products WHERE id=280,bob,10.0.0.40
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 4,analyst,192.168.1.23
+SELECT a.id, b.name FROM products a JOIN logs b ON a.id = b.id WHERE a.id > 647,alice,192.168.1.27
+SELECT * FROM notifications WHERE id > 167 AND id < 806,alice,192.168.1.29
+SELECT price FROM products WHERE id=583,admin,10.0.0.28
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 832,admin,10.0.0.3
+SELECT a.id, b.name FROM orders a JOIN payments b ON a.id = b.id WHERE a.id > 689,admin,10.0.0.4
+SELECT * FROM sessions WHERE id > 994 AND id < 786,charlie,10.0.0.21
+SELECT amount FROM products WHERE id=678,ops,192.168.1.34
+DELETE FROM payments WHERE id = 828,admin,10.0.0.17
+DELETE FROM reviews WHERE id = 171,svc,192.168.1.65
+SELECT a.id, b.name FROM notifications a JOIN orders b ON a.id = b.id WHERE a.id > 887,charlie,192.168.1.57
+UPDATE orders SET name = 'updated' WHERE id = 504,guest,10.0.0.36
+SELECT a.id, b.name FROM products a JOIN logs b ON a.id = b.id WHERE a.id > 179,alice,192.168.1.10
+SELECT name FROM inventory WHERE id=456,analyst,10.0.0.2
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3564,ops,192.168.1.62
+SELECT * FROM products ORDER BY created_at DESC LIMIT 41,alice,192.168.1.44
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,192.168.1.65
+SELECT a.id, b.name FROM inventory a JOIN orders b ON a.id = b.id WHERE a.id > 676,alice,10.0.0.31
+SELECT status FROM orders WHERE id=906,dev,10.0.0.36
+SELECT * FROM notifications WHERE id > 3 AND id < 957,analyst,192.168.1.43
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,192.168.1.26
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 7,alice,10.0.0.6
+SELECT status FROM notifications WHERE id=497,bob,10.0.0.34
+UPDATE logs SET name = 'updated' WHERE id = 576,bob,192.168.1.38
+SELECT name FROM logs WHERE id=252,ops,10.0.0.43
+SELECT a.id, b.name FROM users a JOIN notifications b ON a.id = b.id WHERE a.id > 232,svc,192.168.1.39
+SELECT * FROM notifications WHERE id > 454 AND id < 296,analyst,192.168.1.40
+SELECT email FROM logs WHERE id=573,ops,10.0.0.10
+SELECT * FROM reviews WHERE id > 240 AND id < 500,svc,192.168.1.61
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,charlie,192.168.1.39
+DELETE FROM reviews WHERE id = 246,bob,10.0.0.9
+SELECT name FROM products WHERE id=847,charlie,192.168.1.15
+UPDATE inventory SET name = 'updated' WHERE id = 413,alice,192.168.1.13
+SELECT name FROM users WHERE id=790,guest,192.168.1.69
+DELETE FROM reviews WHERE id = 547,alice,10.0.0.39
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2169,alice,10.0.0.47
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 50,ops,192.168.1.64
+SELECT * FROM inventory WHERE id > 760 AND id < 1011,bob,10.0.0.32
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,analyst,10.0.0.41
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 658,bob,10.0.0.37
+INSERT INTO notifications (id, name) VALUES (564, 'test_user'),analyst,10.0.0.20
+SELECT * FROM users ORDER BY created_at DESC LIMIT 26,dev,192.168.1.60
+DELETE FROM payments WHERE id = 983,dev,10.0.0.15
+SELECT status FROM notifications WHERE id=992,ops,192.168.1.29
+SELECT a.id, b.name FROM users a JOIN inventory b ON a.id = b.id WHERE a.id > 100,admin,192.168.1.52
+SELECT a.id, b.name FROM orders a JOIN notifications b ON a.id = b.id WHERE a.id > 25,ops,192.168.1.49
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,guest,192.168.1.32
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,svc,192.168.1.67
+UPDATE inventory SET name = 'updated' WHERE id = 370,ops,192.168.1.45
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3323,admin,192.168.1.60
+SELECT * FROM notifications WHERE id > 123 AND id < 432,ops,10.0.0.40
+SELECT amount FROM products WHERE id=255,dev,10.0.0.28
+SELECT price FROM products WHERE id=872,dev,10.0.0.7
+SELECT * FROM users ORDER BY created_at DESC LIMIT 30,bob,10.0.0.29
+SELECT status FROM logs WHERE id=262,guest,10.0.0.15
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 144,guest,192.168.1.43
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 15,bob,192.168.1.17
+SELECT user_id FROM notifications WHERE id=606,analyst,10.0.0.14
+SELECT user_id FROM reviews WHERE id=55,dev,192.168.1.48
+SELECT * FROM products ORDER BY created_at DESC LIMIT 45,alice,10.0.0.41
+SELECT id FROM inventory WHERE id=159,guest,10.0.0.18
+INSERT INTO logs (id, name) VALUES (394, 'test_user'),svc,192.168.1.60
+INSERT INTO users (id, name) VALUES (817, 'test_user'),dev,10.0.0.37
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,192.168.1.38
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,192.168.1.11
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 36,dev,192.168.1.77
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,guest,10.0.0.46
+INSERT INTO notifications (id, name) VALUES (499, 'test_user'),charlie,10.0.0.23
+SELECT * FROM reviews WHERE id > 82 AND id < 861,admin,192.168.1.65
+SELECT * FROM orders WHERE id > 703 AND id < 1051,bob,10.0.0.23
+UPDATE payments SET name = 'updated' WHERE id = 749,svc,192.168.1.73
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,charlie,10.0.0.37
+INSERT INTO payments (id, name) VALUES (674, 'test_user'),svc,192.168.1.14
+SELECT a.id, b.name FROM sessions a JOIN notifications b ON a.id = b.id WHERE a.id > 185,alice,192.168.1.38
+SELECT a.id, b.name FROM notifications a JOIN reviews b ON a.id = b.id WHERE a.id > 893,analyst,10.0.0.47
+SELECT a.id, b.name FROM logs a JOIN notifications b ON a.id = b.id WHERE a.id > 119,analyst,192.168.1.35
+UPDATE users SET name = 'updated' WHERE id = 106,svc,192.168.1.63
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,192.168.1.44
+INSERT INTO notifications (id, name) VALUES (318, 'test_user'),ops,192.168.1.25
+SELECT name FROM sessions WHERE id=89,charlie,192.168.1.60
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,charlie,192.168.1.59
+SELECT a.id, b.name FROM products a JOIN logs b ON a.id = b.id WHERE a.id > 524,bob,192.168.1.45
+SELECT user_id FROM payments WHERE id=31,alice,192.168.1.73
+SELECT a.id, b.name FROM payments a JOIN payments b ON a.id = b.id WHERE a.id > 886,charlie,10.0.0.7
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2722,bob,192.168.1.76
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 3,admin,192.168.1.14
+SELECT id FROM logs WHERE id=722,svc,10.0.0.11
+SELECT a.id, b.name FROM inventory a JOIN reviews b ON a.id = b.id WHERE a.id > 66,analyst,10.0.0.29
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 20,svc,192.168.1.37
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4736,bob,192.168.1.77
+DELETE FROM users WHERE id = 276,ops,192.168.1.37
+SELECT a.id, b.name FROM logs a JOIN payments b ON a.id = b.id WHERE a.id > 476,dev,192.168.1.11
+UPDATE notifications SET name = 'updated' WHERE id = 515,admin,10.0.0.10
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,10.0.0.12
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,10.0.0.39
+SELECT a.id, b.name FROM sessions a JOIN inventory b ON a.id = b.id WHERE a.id > 299,alice,10.0.0.27
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,192.168.1.44
+SELECT email FROM logs WHERE id=966,bob,192.168.1.12
+DELETE FROM notifications WHERE id = 130,guest,10.0.0.20
+SELECT a.id, b.name FROM logs a JOIN payments b ON a.id = b.id WHERE a.id > 859,guest,192.168.1.15
+SELECT a.id, b.name FROM inventory a JOIN inventory b ON a.id = b.id WHERE a.id > 44,dev,10.0.0.27
+SELECT * FROM orders WHERE id > 545 AND id < 149,analyst,10.0.0.45
+SELECT * FROM sessions WHERE id > 212 AND id < 327,svc,10.0.0.26
+DELETE FROM reviews WHERE id = 736,analyst,192.168.1.67
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1536,analyst,192.168.1.34
+SELECT created_at FROM orders WHERE id=43,admin,10.0.0.19
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 47,analyst,192.168.1.77
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,guest,192.168.1.37
+SELECT a.id, b.name FROM users a JOIN sessions b ON a.id = b.id WHERE a.id > 642,bob,192.168.1.14
+SELECT amount FROM inventory WHERE id=205,bob,192.168.1.79
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1846,bob,10.0.0.47
+SELECT price FROM logs WHERE id=392,guest,192.168.1.48
+SELECT email FROM payments WHERE id=675,admin,10.0.0.25
+SELECT * FROM products ORDER BY created_at DESC LIMIT 18,analyst,192.168.1.43
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,admin,192.168.1.13
+SELECT user_id FROM payments WHERE id=208,ops,192.168.1.46
+SELECT * FROM users ORDER BY created_at DESC LIMIT 37,ops,192.168.1.35
+SELECT * FROM orders WHERE id > 18 AND id < 775,admin,192.168.1.77
+SELECT stock FROM orders WHERE id=90,guest,192.168.1.44
+DELETE FROM users WHERE id = 422,ops,10.0.0.29
+SELECT a.id, b.name FROM products a JOIN products b ON a.id = b.id WHERE a.id > 984,analyst,192.168.1.51
+SELECT price FROM reviews WHERE id=730,analyst,192.168.1.60
+SELECT * FROM users WHERE id > 171 AND id < 392,admin,192.168.1.68
+DELETE FROM products WHERE id = 411,dev,10.0.0.25
+SELECT a.id, b.name FROM payments a JOIN sessions b ON a.id = b.id WHERE a.id > 851,dev,192.168.1.21
+SELECT user_id FROM payments WHERE id=641,guest,10.0.0.41
+SELECT a.id, b.name FROM users a JOIN inventory b ON a.id = b.id WHERE a.id > 801,guest,10.0.0.30
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 681,svc,192.168.1.74
+SELECT a.id, b.name FROM reviews a JOIN payments b ON a.id = b.id WHERE a.id > 481,analyst,10.0.0.1
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3882,alice,10.0.0.8
+SELECT * FROM payments WHERE id > 286 AND id < 1000,bob,10.0.0.48
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 3,bob,192.168.1.77
+SELECT * FROM payments WHERE id > 911 AND id < 981,bob,192.168.1.69
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 12,admin,192.168.1.64
+SELECT a.id, b.name FROM reviews a JOIN users b ON a.id = b.id WHERE a.id > 70,analyst,192.168.1.12
+SELECT a.id, b.name FROM orders a JOIN users b ON a.id = b.id WHERE a.id > 280,analyst,10.0.0.14
+SELECT user_id FROM users WHERE id=271,guest,192.168.1.53
+SELECT * FROM users WHERE id > 220 AND id < 294,bob,192.168.1.73
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,charlie,10.0.0.23
+DELETE FROM sessions WHERE id = 60,svc,192.168.1.58
+SELECT * FROM inventory WHERE id > 272 AND id < 923,analyst,192.168.1.10
+SELECT * FROM sessions WHERE id > 365 AND id < 901,charlie,10.0.0.43
+INSERT INTO payments (id, name) VALUES (377, 'test_user'),dev,192.168.1.35
+SELECT * FROM notifications WHERE id > 988 AND id < 454,alice,192.168.1.33
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 28,bob,192.168.1.64
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 11,analyst,192.168.1.19
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4564,admin,10.0.0.21
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,ops,192.168.1.44
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 6,bob,192.168.1.79
+INSERT INTO logs (id, name) VALUES (599, 'test_user'),svc,192.168.1.65
+UPDATE logs SET name = 'updated' WHERE id = 43,alice,192.168.1.43
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,alice,192.168.1.28
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 8,admin,192.168.1.50
+SELECT a.id, b.name FROM orders a JOIN notifications b ON a.id = b.id WHERE a.id > 262,ops,192.168.1.41
+INSERT INTO inventory (id, name) VALUES (618, 'test_user'),admin,192.168.1.33
+SELECT * FROM products WHERE id > 315 AND id < 506,ops,192.168.1.12
+SELECT a.id, b.name FROM users a JOIN sessions b ON a.id = b.id WHERE a.id > 748,ops,192.168.1.40
+UPDATE payments SET name = 'updated' WHERE id = 29,charlie,192.168.1.20
+SELECT user_id FROM logs WHERE id=608,analyst,192.168.1.54
+SELECT * FROM payments ORDER BY created_at DESC LIMIT 19,charlie,192.168.1.58
+SELECT * FROM users WHERE id > 705 AND id < 818,bob,10.0.0.5
+SELECT * FROM notifications WHERE id > 808 AND id < 661,charlie,10.0.0.45
+SELECT * FROM orders WHERE id > 383 AND id < 165,ops,10.0.0.22
+SELECT a.id, b.name FROM sessions a JOIN orders b ON a.id = b.id WHERE a.id > 783,analyst,192.168.1.28
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 9,svc,10.0.0.18
+SELECT * FROM logs WHERE id > 388 AND id < 210,alice,192.168.1.59
+DELETE FROM logs WHERE id = 85,ops,192.168.1.49
+INSERT INTO users (id, name) VALUES (503, 'test_user'),bob,10.0.0.43
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 12,analyst,10.0.0.22
+DELETE FROM users WHERE id = 235,svc,192.168.1.49
+SELECT * FROM inventory WHERE id > 54 AND id < 201,dev,192.168.1.57
+INSERT INTO payments (id, name) VALUES (689, 'test_user'),svc,192.168.1.46
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3875,admin,192.168.1.53
+UPDATE orders SET name = 'updated' WHERE id = 627,admin,10.0.0.4
+SELECT created_at FROM notifications WHERE id=837,ops,10.0.0.18
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,svc,10.0.0.37
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,192.168.1.66
+SELECT email FROM reviews WHERE id=23,dev,192.168.1.60
+INSERT INTO inventory (id, name) VALUES (536, 'test_user'),dev,192.168.1.31
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 642,bob,10.0.0.45
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3169,alice,10.0.0.47
+SELECT user_id FROM products WHERE id=126,guest,10.0.0.23
+SELECT * FROM orders WHERE id > 316 AND id < 951,bob,192.168.1.78
+SELECT user_id FROM logs WHERE id=811,guest,192.168.1.19
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,bob,192.168.1.76
+SELECT user_id FROM payments WHERE id=597,alice,10.0.0.8
+SELECT a.id, b.name FROM reviews a JOIN reviews b ON a.id = b.id WHERE a.id > 668,admin,10.0.0.36
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,alice,192.168.1.79
+SELECT id FROM inventory WHERE id=604,charlie,192.168.1.76
+INSERT INTO orders (id, name) VALUES (784, 'test_user'),guest,192.168.1.71
+UPDATE inventory SET name = 'updated' WHERE id = 663,ops,10.0.0.9
+SELECT user_id FROM orders WHERE id=821,dev,10.0.0.30
+SELECT * FROM reviews ORDER BY created_at DESC LIMIT 9,alice,192.168.1.71
+SELECT email FROM users WHERE id=374,ops,192.168.1.28
+UPDATE notifications SET name = 'updated' WHERE id = 422,ops,10.0.0.42
+SELECT * FROM logs WHERE id > 479 AND id < 873,ops,192.168.1.24
+SELECT user_id FROM orders WHERE id=303,charlie,10.0.0.1
+DELETE FROM products WHERE id = 918,alice,10.0.0.3
+UPDATE users SET name = 'updated' WHERE id = 851,charlie,10.0.0.35
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,bob,10.0.0.42
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,ops,192.168.1.57
+INSERT INTO products (id, name) VALUES (474, 'test_user'),dev,192.168.1.55
+SELECT a.id, b.name FROM reviews a JOIN notifications b ON a.id = b.id WHERE a.id > 622,dev,192.168.1.38
+INSERT INTO inventory (id, name) VALUES (978, 'test_user'),guest,10.0.0.14
+SELECT a.id, b.name FROM sessions a JOIN users b ON a.id = b.id WHERE a.id > 255,ops,192.168.1.22
+SELECT user_id FROM notifications WHERE id=29,bob,192.168.1.44
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4397,admin,192.168.1.73
+SELECT status FROM notifications WHERE id=529,admin,10.0.0.22
+DELETE FROM payments WHERE id = 946,dev,192.168.1.48
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 3,ops,192.168.1.37
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,svc,192.168.1.64
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 7,charlie,192.168.1.15
+SELECT created_at FROM payments WHERE id=186,ops,192.168.1.71
+SELECT id FROM logs WHERE id=559,svc,10.0.0.3
+INSERT INTO payments (id, name) VALUES (8, 'test_user'),alice,10.0.0.31
+SELECT a.id, b.name FROM logs a JOIN payments b ON a.id = b.id WHERE a.id > 80,guest,192.168.1.17
+SELECT a.id, b.name FROM logs a JOIN orders b ON a.id = b.id WHERE a.id > 463,charlie,192.168.1.72
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 30,dev,10.0.0.9
+SELECT id FROM notifications WHERE id=499,dev,10.0.0.8
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 9,ops,10.0.0.17
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,bob,192.168.1.38
+UPDATE logs SET name = 'updated' WHERE id = 363,svc,192.168.1.42
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,10.0.0.14
+SELECT * FROM payments WHERE id > 494 AND id < 615,analyst,10.0.0.6
+SELECT * FROM sessions WHERE id > 556 AND id < 520,alice,192.168.1.40
+SELECT a.id, b.name FROM inventory a JOIN users b ON a.id = b.id WHERE a.id > 659,bob,192.168.1.39
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,10.0.0.42
+DELETE FROM payments WHERE id = 162,svc,10.0.0.44
+SELECT price FROM payments WHERE id=30,charlie,10.0.0.46
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1261,admin,10.0.0.21
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 10,charlie,10.0.0.22
+SELECT id FROM payments WHERE id=291,guest,192.168.1.45
+SELECT user_id FROM orders WHERE id=769,guest,192.168.1.34
+INSERT INTO products (id, name) VALUES (767, 'test_user'),bob,192.168.1.47
+SELECT a.id, b.name FROM logs a JOIN users b ON a.id = b.id WHERE a.id > 299,bob,10.0.0.12
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 847,analyst,10.0.0.31
+SELECT a.id, b.name FROM logs a JOIN reviews b ON a.id = b.id WHERE a.id > 311,admin,192.168.1.10
+INSERT INTO reviews (id, name) VALUES (356, 'test_user'),admin,192.168.1.76
+SELECT amount FROM inventory WHERE id=965,svc,192.168.1.36
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,10.0.0.31
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2031,analyst,10.0.0.41
+SELECT a.id, b.name FROM notifications a JOIN products b ON a.id = b.id WHERE a.id > 489,guest,192.168.1.46
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 103,analyst,10.0.0.25
+SELECT stock FROM sessions WHERE id=767,analyst,192.168.1.50
+SELECT * FROM logs WHERE id > 860 AND id < 398,svc,10.0.0.2
+SELECT created_at FROM notifications WHERE id=696,alice,192.168.1.57
+SELECT a.id, b.name FROM products a JOIN payments b ON a.id = b.id WHERE a.id > 296,dev,192.168.1.44
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,10.0.0.32
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 13,bob,10.0.0.38
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,admin,192.168.1.18
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1144,svc,192.168.1.18
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1463,admin,192.168.1.15
+SELECT a.id, b.name FROM orders a JOIN users b ON a.id = b.id WHERE a.id > 988,admin,192.168.1.65
+SELECT email FROM notifications WHERE id=302,svc,10.0.0.31
+SELECT a.id, b.name FROM orders a JOIN inventory b ON a.id = b.id WHERE a.id > 817,alice,192.168.1.41
+SELECT a.id, b.name FROM orders a JOIN payments b ON a.id = b.id WHERE a.id > 560,admin,10.0.0.7
+SELECT * FROM users ORDER BY created_at DESC LIMIT 46,admin,192.168.1.43
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,ops,10.0.0.24
+SELECT * FROM notifications WHERE id > 872 AND id < 866,dev,192.168.1.24
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 69,admin,10.0.0.13
+SELECT * FROM products WHERE id > 447 AND id < 480,ops,192.168.1.42
+SELECT user_id FROM inventory WHERE id=572,bob,192.168.1.79
+SELECT a.id, b.name FROM users a JOIN sessions b ON a.id = b.id WHERE a.id > 184,ops,192.168.1.52
+UPDATE sessions SET name = 'updated' WHERE id = 416,analyst,10.0.0.8
+INSERT INTO logs (id, name) VALUES (881, 'test_user'),svc,10.0.0.19
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4964,alice,10.0.0.32
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 7,guest,10.0.0.6
+DELETE FROM products WHERE id = 867,analyst,192.168.1.55
+SELECT * FROM notifications WHERE id > 728 AND id < 335,svc,192.168.1.75
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,charlie,192.168.1.24
+UPDATE sessions SET name = 'updated' WHERE id = 167,analyst,192.168.1.62
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 44,bob,10.0.0.1
+SELECT a.id, b.name FROM users a JOIN inventory b ON a.id = b.id WHERE a.id > 823,svc,192.168.1.43
+SELECT a.id, b.name FROM notifications a JOIN notifications b ON a.id = b.id WHERE a.id > 679,ops,192.168.1.14
+INSERT INTO orders (id, name) VALUES (836, 'test_user'),guest,192.168.1.52
+DELETE FROM reviews WHERE id = 582,guest,10.0.0.36
+SELECT a.id, b.name FROM payments a JOIN users b ON a.id = b.id WHERE a.id > 277,bob,10.0.0.42
+SELECT * FROM reviews ORDER BY created_at DESC LIMIT 37,alice,192.168.1.54
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 3,charlie,10.0.0.31
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4380,dev,192.168.1.78
+SELECT a.id, b.name FROM logs a JOIN sessions b ON a.id = b.id WHERE a.id > 477,svc,192.168.1.78
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,charlie,10.0.0.48
+SELECT a.id, b.name FROM reviews a JOIN products b ON a.id = b.id WHERE a.id > 856,admin,192.168.1.22
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4849,svc,10.0.0.35
+UPDATE notifications SET name = 'updated' WHERE id = 547,analyst,10.0.0.5
+UPDATE orders SET name = 'updated' WHERE id = 618,bob,192.168.1.65
+SELECT * FROM products ORDER BY created_at DESC LIMIT 27,ops,10.0.0.40
+SELECT a.id, b.name FROM orders a JOIN reviews b ON a.id = b.id WHERE a.id > 962,dev,192.168.1.13
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4531,alice,192.168.1.62
+SELECT * FROM orders WHERE id > 624 AND id < 1097,bob,192.168.1.62
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 6,svc,192.168.1.77
+UPDATE inventory SET name = 'updated' WHERE id = 597,analyst,10.0.0.48
+UPDATE sessions SET name = 'updated' WHERE id = 734,ops,10.0.0.10
+SELECT * FROM orders WHERE id > 528 AND id < 124,guest,192.168.1.68
+SELECT created_at FROM users WHERE id=998,ops,10.0.0.34
+DELETE FROM products WHERE id = 519,charlie,192.168.1.32
+SELECT name FROM inventory WHERE id=979,svc,192.168.1.32
+UPDATE users SET name = 'updated' WHERE id = 507,alice,192.168.1.31
+SELECT email FROM sessions WHERE id=862,charlie,10.0.0.7
+SELECT a.id, b.name FROM users a JOIN logs b ON a.id = b.id WHERE a.id > 382,charlie,192.168.1.37
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 928,charlie,192.168.1.27
+SELECT a.id, b.name FROM payments a JOIN products b ON a.id = b.id WHERE a.id > 896,admin,10.0.0.40
+SELECT * FROM reviews ORDER BY created_at DESC LIMIT 42,svc,10.0.0.2
+INSERT INTO users (id, name) VALUES (22, 'test_user'),dev,192.168.1.23
+SELECT a.id, b.name FROM orders a JOIN logs b ON a.id = b.id WHERE a.id > 58,analyst,192.168.1.10
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,192.168.1.28
+SELECT name FROM inventory WHERE id=356,dev,192.168.1.60
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3486,dev,10.0.0.41
+SELECT status FROM payments WHERE id=307,svc,10.0.0.2
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4530,ops,10.0.0.24
+INSERT INTO inventory (id, name) VALUES (91, 'test_user'),analyst,192.168.1.13
+SELECT * FROM logs WHERE id > 306 AND id < 418,charlie,10.0.0.43
+SELECT a.id, b.name FROM logs a JOIN reviews b ON a.id = b.id WHERE a.id > 933,alice,10.0.0.2
+SELECT a.id, b.name FROM orders a JOIN logs b ON a.id = b.id WHERE a.id > 465,dev,192.168.1.24
+SELECT * FROM products ORDER BY created_at DESC LIMIT 8,bob,10.0.0.25
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,bob,10.0.0.23
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 22,analyst,192.168.1.51
+INSERT INTO orders (id, name) VALUES (717, 'test_user'),dev,10.0.0.12
+SELECT status FROM users WHERE id=552,dev,192.168.1.43
+SELECT amount FROM logs WHERE id=127,analyst,10.0.0.35
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 421,ops,192.168.1.60
+SELECT stock FROM payments WHERE id=109,alice,192.168.1.44
+SELECT a.id, b.name FROM reviews a JOIN logs b ON a.id = b.id WHERE a.id > 968,dev,10.0.0.35
+DELETE FROM users WHERE id = 859,dev,192.168.1.20
+INSERT INTO reviews (id, name) VALUES (876, 'test_user'),charlie,192.168.1.43
+INSERT INTO sessions (id, name) VALUES (268, 'test_user'),dev,10.0.0.23
+SELECT * FROM payments WHERE id > 501 AND id < 393,bob,10.0.0.17
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,admin,10.0.0.32
+INSERT INTO notifications (id, name) VALUES (411, 'test_user'),alice,192.168.1.67
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,svc,10.0.0.36
+SELECT a.id, b.name FROM reviews a JOIN orders b ON a.id = b.id WHERE a.id > 751,admin,192.168.1.38
+SELECT * FROM notifications WHERE id > 498 AND id < 662,analyst,192.168.1.54
+SELECT * FROM users WHERE id > 669 AND id < 279,alice,192.168.1.20
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,charlie,10.0.0.26
+UPDATE users SET name = 'updated' WHERE id = 822,bob,192.168.1.19
+SELECT a.id, b.name FROM sessions a JOIN logs b ON a.id = b.id WHERE a.id > 820,svc,10.0.0.48
+UPDATE users SET name = 'updated' WHERE id = 592,svc,10.0.0.3
+SELECT a.id, b.name FROM reviews a JOIN products b ON a.id = b.id WHERE a.id > 669,dev,192.168.1.69
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 641,analyst,10.0.0.29
+SELECT a.id, b.name FROM payments a JOIN payments b ON a.id = b.id WHERE a.id > 251,ops,192.168.1.13
+DELETE FROM notifications WHERE id = 279,admin,192.168.1.55
+SELECT * FROM products WHERE id > 355 AND id < 603,svc,192.168.1.65
+SELECT * FROM inventory WHERE id > 156 AND id < 419,bob,10.0.0.36
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,192.168.1.26
+UPDATE notifications SET name = 'updated' WHERE id = 128,svc,10.0.0.6
+SELECT price FROM orders WHERE id=807,charlie,192.168.1.51
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,svc,192.168.1.40
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 17,analyst,192.168.1.48
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,ops,192.168.1.55
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,charlie,10.0.0.47
+INSERT INTO products (id, name) VALUES (965, 'test_user'),guest,192.168.1.29
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 9,guest,10.0.0.32
+SELECT stock FROM products WHERE id=644,dev,10.0.0.8
+SELECT amount FROM sessions WHERE id=579,ops,192.168.1.15
+SELECT * FROM inventory WHERE id > 185 AND id < 663,alice,192.168.1.33
+SELECT amount FROM logs WHERE id=811,svc,192.168.1.56
+SELECT a.id, b.name FROM inventory a JOIN users b ON a.id = b.id WHERE a.id > 945,alice,10.0.0.7
+SELECT * FROM users WHERE id > 348 AND id < 709,ops,192.168.1.58
+UPDATE orders SET name = 'updated' WHERE id = 204,charlie,10.0.0.26
+DELETE FROM sessions WHERE id = 556,dev,192.168.1.72
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,10.0.0.38
+INSERT INTO reviews (id, name) VALUES (608, 'test_user'),alice,10.0.0.14
+UPDATE products SET name = 'updated' WHERE id = 915,ops,192.168.1.10
+SELECT status FROM reviews WHERE id=483,admin,192.168.1.41
+SELECT * FROM payments WHERE id > 252 AND id < 752,bob,192.168.1.39
+SELECT a.id, b.name FROM reviews a JOIN logs b ON a.id = b.id WHERE a.id > 213,charlie,192.168.1.40
+SELECT status FROM orders WHERE id=725,bob,192.168.1.35
+SELECT a.id, b.name FROM products a JOIN users b ON a.id = b.id WHERE a.id > 425,admin,192.168.1.70
+SELECT * FROM products WHERE id > 937 AND id < 873,guest,192.168.1.74
+SELECT * FROM logs WHERE id > 430 AND id < 146,charlie,192.168.1.18
+SELECT * FROM notifications WHERE id > 177 AND id < 551,bob,10.0.0.42
+SELECT * FROM payments WHERE id > 580 AND id < 269,alice,10.0.0.5
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,10.0.0.32
+SELECT a.id, b.name FROM products a JOIN logs b ON a.id = b.id WHERE a.id > 311,bob,192.168.1.70
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3740,alice,192.168.1.10
+SELECT a.id, b.name FROM sessions a JOIN payments b ON a.id = b.id WHERE a.id > 272,guest,192.168.1.48
+SELECT created_at FROM reviews WHERE id=408,guest,192.168.1.10
+SELECT id FROM notifications WHERE id=948,analyst,192.168.1.26
+SELECT * FROM products WHERE id > 879 AND id < 394,guest,10.0.0.22
+UPDATE logs SET name = 'updated' WHERE id = 165,guest,192.168.1.71
+INSERT INTO notifications (id, name) VALUES (221, 'test_user'),dev,10.0.0.36
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,ops,192.168.1.35
+SELECT a.id, b.name FROM notifications a JOIN inventory b ON a.id = b.id WHERE a.id > 736,ops,192.168.1.44
+SELECT * FROM sessions WHERE id > 512 AND id < 817,ops,10.0.0.16
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,admin,10.0.0.43
+SELECT * FROM orders WHERE id > 746 AND id < 465,guest,192.168.1.50
+SELECT a.id, b.name FROM inventory a JOIN notifications b ON a.id = b.id WHERE a.id > 577,dev,192.168.1.26
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,10.0.0.26
+SELECT * FROM users WHERE id > 465 AND id < 688,dev,192.168.1.39
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,svc,192.168.1.71
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,192.168.1.70
+DELETE FROM users WHERE id = 718,alice,10.0.0.1
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3362,charlie,192.168.1.42
+INSERT INTO payments (id, name) VALUES (505, 'test_user'),admin,192.168.1.67
+SELECT name FROM users WHERE id=813,charlie,10.0.0.47
+SELECT a.id, b.name FROM users a JOIN sessions b ON a.id = b.id WHERE a.id > 673,ops,192.168.1.15
+INSERT INTO logs (id, name) VALUES (378, 'test_user'),analyst,10.0.0.6
+UPDATE notifications SET name = 'updated' WHERE id = 720,analyst,192.168.1.53
+DELETE FROM sessions WHERE id = 489,guest,192.168.1.46
+SELECT * FROM users ORDER BY created_at DESC LIMIT 23,ops,192.168.1.11
+SELECT a.id, b.name FROM logs a JOIN payments b ON a.id = b.id WHERE a.id > 286,guest,192.168.1.47
+SELECT a.id, b.name FROM products a JOIN reviews b ON a.id = b.id WHERE a.id > 702,alice,192.168.1.78
+SELECT * FROM payments WHERE id > 544 AND id < 222,guest,10.0.0.15
+DELETE FROM inventory WHERE id = 263,analyst,10.0.0.43
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4193,svc,192.168.1.46
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,guest,192.168.1.64
+SELECT price FROM inventory WHERE id=368,analyst,192.168.1.66
+SELECT * FROM users ORDER BY created_at DESC LIMIT 38,ops,192.168.1.72
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 9,admin,10.0.0.10
+SELECT a.id, b.name FROM orders a JOIN inventory b ON a.id = b.id WHERE a.id > 826,ops,192.168.1.70
+SELECT a.id, b.name FROM reviews a JOIN sessions b ON a.id = b.id WHERE a.id > 799,guest,192.168.1.24
+SELECT * FROM users ORDER BY created_at DESC LIMIT 22,admin,10.0.0.13
+SELECT a.id, b.name FROM products a JOIN notifications b ON a.id = b.id WHERE a.id > 101,svc,192.168.1.32
+SELECT a.id, b.name FROM reviews a JOIN reviews b ON a.id = b.id WHERE a.id > 131,bob,10.0.0.39
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 45,svc,10.0.0.9
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2795,analyst,192.168.1.25
+SELECT id FROM reviews WHERE id=186,bob,192.168.1.43
+SELECT * FROM notifications WHERE id > 877 AND id < 355,guest,192.168.1.24
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1310,ops,192.168.1.46
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3421,ops,192.168.1.44
+SELECT * FROM reviews ORDER BY created_at DESC LIMIT 17,svc,10.0.0.22
+INSERT INTO reviews (id, name) VALUES (409, 'test_user'),admin,192.168.1.27
+SELECT a.id, b.name FROM sessions a JOIN users b ON a.id = b.id WHERE a.id > 658,bob,10.0.0.10
+INSERT INTO sessions (id, name) VALUES (344, 'test_user'),admin,192.168.1.73
+SELECT created_at FROM logs WHERE id=39,analyst,192.168.1.12
+SELECT a.id, b.name FROM products a JOIN products b ON a.id = b.id WHERE a.id > 966,svc,192.168.1.72
+SELECT name FROM logs WHERE id=409,ops,192.168.1.74
+DELETE FROM sessions WHERE id = 164,svc,10.0.0.38
+SELECT * FROM orders WHERE id > 289 AND id < 303,bob,10.0.0.31
+SELECT a.id, b.name FROM logs a JOIN users b ON a.id = b.id WHERE a.id > 124,guest,192.168.1.36
+DELETE FROM notifications WHERE id = 441,dev,10.0.0.48
+SELECT a.id, b.name FROM users a JOIN users b ON a.id = b.id WHERE a.id > 808,dev,10.0.0.1
+SELECT name FROM inventory WHERE id=946,ops,10.0.0.4
+SELECT * FROM products ORDER BY created_at DESC LIMIT 8,charlie,192.168.1.36
+INSERT INTO sessions (id, name) VALUES (541, 'test_user'),svc,192.168.1.55
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1516,analyst,192.168.1.71
+SELECT * FROM products ORDER BY created_at DESC LIMIT 42,charlie,192.168.1.55
+INSERT INTO products (id, name) VALUES (268, 'test_user'),alice,192.168.1.37
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2378,ops,192.168.1.20
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4504,svc,192.168.1.37
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3056,analyst,192.168.1.11
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,svc,192.168.1.70
+SELECT * FROM orders WHERE id > 868 AND id < 310,guest,192.168.1.47
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 9,charlie,192.168.1.24
+SELECT * FROM reviews WHERE id > 646 AND id < 1056,analyst,192.168.1.50
+SELECT * FROM reviews WHERE id > 644 AND id < 513,dev,10.0.0.25
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 27,admin,192.168.1.72
+DELETE FROM users WHERE id = 548,guest,192.168.1.34
+SELECT a.id, b.name FROM notifications a JOIN products b ON a.id = b.id WHERE a.id > 408,analyst,192.168.1.78
+SELECT name FROM logs WHERE id=791,guest,10.0.0.41
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,alice,192.168.1.34
+DELETE FROM payments WHERE id = 740,dev,10.0.0.43
+SELECT a.id, b.name FROM sessions a JOIN reviews b ON a.id = b.id WHERE a.id > 100,analyst,10.0.0.33
+SELECT * FROM orders WHERE id > 563 AND id < 949,alice,192.168.1.57
+SELECT email FROM inventory WHERE id=727,analyst,192.168.1.75
+SELECT status FROM notifications WHERE id=147,svc,192.168.1.36
+DELETE FROM payments WHERE id = 378,ops,10.0.0.10
+INSERT INTO payments (id, name) VALUES (431, 'test_user'),svc,192.168.1.33
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3253,svc,192.168.1.48
+UPDATE sessions SET name = 'updated' WHERE id = 385,svc,192.168.1.63
+INSERT INTO products (id, name) VALUES (395, 'test_user'),dev,10.0.0.10
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,alice,10.0.0.37
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,ops,192.168.1.76
+SELECT stock FROM reviews WHERE id=27,ops,192.168.1.25
+INSERT INTO inventory (id, name) VALUES (149, 'test_user'),bob,192.168.1.10
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2330,bob,192.168.1.39
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,bob,10.0.0.7
+SELECT * FROM notifications WHERE id > 353 AND id < 250,svc,10.0.0.30
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 393,svc,10.0.0.47
+SELECT created_at FROM products WHERE id=36,dev,10.0.0.48
+SELECT a.id, b.name FROM reviews a JOIN products b ON a.id = b.id WHERE a.id > 669,analyst,192.168.1.56
+UPDATE products SET name = 'updated' WHERE id = 820,dev,192.168.1.34
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3427,analyst,192.168.1.38
+INSERT INTO payments (id, name) VALUES (593, 'test_user'),alice,10.0.0.31
+SELECT * FROM sessions WHERE id > 434 AND id < 550,bob,192.168.1.69
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,ops,10.0.0.42
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,192.168.1.48
+INSERT INTO products (id, name) VALUES (484, 'test_user'),ops,192.168.1.67
+SELECT * FROM products WHERE id > 945 AND id < 468,ops,10.0.0.1
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,10.0.0.15
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,guest,192.168.1.66
+SELECT email FROM logs WHERE id=30,svc,192.168.1.17
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 10,admin,192.168.1.71
+SELECT a.id, b.name FROM orders a JOIN payments b ON a.id = b.id WHERE a.id > 871,dev,192.168.1.49
+SELECT * FROM payments WHERE id > 913 AND id < 176,dev,192.168.1.12
+INSERT INTO orders (id, name) VALUES (55, 'test_user'),alice,192.168.1.37
+SELECT name FROM sessions WHERE id=279,admin,10.0.0.11
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 622,guest,10.0.0.5
+SELECT * FROM payments WHERE id > 726 AND id < 1057,svc,192.168.1.64
+SELECT * FROM products WHERE id > 733 AND id < 319,dev,10.0.0.32
+SELECT a.id, b.name FROM notifications a JOIN payments b ON a.id = b.id WHERE a.id > 685,svc,192.168.1.79
+DELETE FROM payments WHERE id = 484,bob,192.168.1.14
+UPDATE payments SET name = 'updated' WHERE id = 997,alice,10.0.0.38
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,192.168.1.37
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,svc,192.168.1.40
+SELECT user_id FROM products WHERE id=334,charlie,192.168.1.40
+SELECT * FROM reviews WHERE id > 531 AND id < 838,charlie,10.0.0.21
+UPDATE inventory SET name = 'updated' WHERE id = 142,ops,192.168.1.36
+DELETE FROM inventory WHERE id = 985,dev,192.168.1.20
+SELECT * FROM inventory WHERE id > 314 AND id < 706,dev,10.0.0.14
+SELECT a.id, b.name FROM sessions a JOIN sessions b ON a.id = b.id WHERE a.id > 254,charlie,192.168.1.52
+SELECT a.id, b.name FROM reviews a JOIN logs b ON a.id = b.id WHERE a.id > 36,charlie,192.168.1.55
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 33,dev,10.0.0.46
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,svc,192.168.1.20
+SELECT a.id, b.name FROM inventory a JOIN reviews b ON a.id = b.id WHERE a.id > 548,bob,192.168.1.67
+INSERT INTO inventory (id, name) VALUES (579, 'test_user'),svc,192.168.1.14
+SELECT a.id, b.name FROM users a JOIN inventory b ON a.id = b.id WHERE a.id > 193,dev,192.168.1.12
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 579,alice,192.168.1.77
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,guest,192.168.1.14
+SELECT amount FROM products WHERE id=306,charlie,10.0.0.17
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 10,alice,192.168.1.54
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 38,admin,10.0.0.30
+SELECT * FROM sessions WHERE id > 948 AND id < 1004,svc,192.168.1.66
+SELECT a.id, b.name FROM users a JOIN notifications b ON a.id = b.id WHERE a.id > 715,charlie,10.0.0.28
+UPDATE inventory SET name = 'updated' WHERE id = 132,ops,192.168.1.32
+SELECT * FROM reviews WHERE id > 394 AND id < 396,bob,10.0.0.22
+SELECT id FROM products WHERE id=914,dev,192.168.1.18
+SELECT * FROM products WHERE id > 321 AND id < 265,guest,192.168.1.64
+DELETE FROM users WHERE id = 82,charlie,10.0.0.17
+SELECT a.id, b.name FROM products a JOIN reviews b ON a.id = b.id WHERE a.id > 407,dev,192.168.1.28
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 10,dev,192.168.1.31
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,bob,10.0.0.15
+INSERT INTO inventory (id, name) VALUES (65, 'test_user'),ops,192.168.1.48
+INSERT INTO inventory (id, name) VALUES (382, 'test_user'),bob,192.168.1.76
+SELECT * FROM users WHERE id > 68 AND id < 258,analyst,192.168.1.45
+DELETE FROM reviews WHERE id = 655,dev,10.0.0.4
+SELECT a.id, b.name FROM logs a JOIN products b ON a.id = b.id WHERE a.id > 130,dev,192.168.1.79
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,charlie,10.0.0.12
+UPDATE reviews SET name = 'updated' WHERE id = 251,dev,192.168.1.11
+DELETE FROM sessions WHERE id = 897,ops,10.0.0.38
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,analyst,192.168.1.14
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 1,guest,192.168.1.41
+DELETE FROM sessions WHERE id = 923,ops,10.0.0.13
+SELECT * FROM reviews WHERE id > 600 AND id < 695,alice,192.168.1.19
+SELECT a.id, b.name FROM inventory a JOIN inventory b ON a.id = b.id WHERE a.id > 161,svc,192.168.1.38
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2416,admin,10.0.0.40
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,192.168.1.19
+INSERT INTO sessions (id, name) VALUES (163, 'test_user'),bob,192.168.1.35
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1541,admin,10.0.0.49
+SELECT a.id, b.name FROM reviews a JOIN sessions b ON a.id = b.id WHERE a.id > 62,analyst,192.168.1.79
+SELECT a.id, b.name FROM sessions a JOIN reviews b ON a.id = b.id WHERE a.id > 691,dev,192.168.1.59
+SELECT email FROM payments WHERE id=585,alice,192.168.1.57
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,charlie,10.0.0.28
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 29,admin,192.168.1.14
+UPDATE reviews SET name = 'updated' WHERE id = 257,charlie,10.0.0.28
+SELECT a.id, b.name FROM users a JOIN notifications b ON a.id = b.id WHERE a.id > 968,analyst,192.168.1.25
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 916,analyst,192.168.1.69
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,charlie,10.0.0.8
+SELECT created_at FROM payments WHERE id=44,dev,192.168.1.11
+SELECT * FROM logs WHERE id > 90 AND id < 956,analyst,192.168.1.44
+SELECT a.id, b.name FROM users a JOIN sessions b ON a.id = b.id WHERE a.id > 552,analyst,10.0.0.24
+UPDATE payments SET name = 'updated' WHERE id = 846,analyst,192.168.1.34
+SELECT price FROM orders WHERE id=839,guest,192.168.1.42
+SELECT id FROM notifications WHERE id=280,alice,192.168.1.45
+SELECT a.id, b.name FROM reviews a JOIN reviews b ON a.id = b.id WHERE a.id > 523,ops,192.168.1.19
+SELECT id FROM notifications WHERE id=696,bob,192.168.1.29
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4301,alice,10.0.0.2
+INSERT INTO payments (id, name) VALUES (133, 'test_user'),charlie,10.0.0.34
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3260,analyst,192.168.1.56
+SELECT * FROM reviews WHERE id > 293 AND id < 477,analyst,192.168.1.27
+SELECT * FROM sessions WHERE id > 823 AND id < 600,charlie,192.168.1.63
+INSERT INTO products (id, name) VALUES (449, 'test_user'),svc,192.168.1.18
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2335,admin,192.168.1.31
+SELECT stock FROM payments WHERE id=906,admin,10.0.0.28
+DELETE FROM users WHERE id = 131,alice,192.168.1.15
+SELECT * FROM reviews ORDER BY created_at DESC LIMIT 12,admin,192.168.1.76
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,10.0.0.30
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 9,bob,192.168.1.76
+SELECT name FROM payments WHERE id=590,alice,10.0.0.21
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,10.0.0.37
+SELECT * FROM reviews WHERE id > 602 AND id < 539,ops,192.168.1.47
+INSERT INTO products (id, name) VALUES (905, 'test_user'),dev,10.0.0.34
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3283,dev,10.0.0.44
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3690,ops,10.0.0.4
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 44,bob,10.0.0.20
+SELECT * FROM users ORDER BY created_at DESC LIMIT 31,svc,10.0.0.20
+SELECT * FROM sessions WHERE id > 441 AND id < 688,guest,10.0.0.5
+SELECT a.id, b.name FROM inventory a JOIN products b ON a.id = b.id WHERE a.id > 829,svc,192.168.1.20
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,alice,192.168.1.75
+UPDATE inventory SET name = 'updated' WHERE id = 957,ops,10.0.0.4
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 867,svc,10.0.0.16
+SELECT a.id, b.name FROM notifications a JOIN products b ON a.id = b.id WHERE a.id > 114,dev,192.168.1.40
+SELECT * FROM orders WHERE id > 851 AND id < 1013,svc,192.168.1.54
+SELECT * FROM logs WHERE id > 204 AND id < 968,ops,192.168.1.48
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4783,admin,192.168.1.51
+SELECT a.id, b.name FROM logs a JOIN users b ON a.id = b.id WHERE a.id > 818,svc,192.168.1.16
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 61,dev,192.168.1.21
+SELECT price FROM inventory WHERE id=459,svc,192.168.1.79
+INSERT INTO sessions (id, name) VALUES (821, 'test_user'),charlie,10.0.0.29
+UPDATE payments SET name = 'updated' WHERE id = 701,ops,192.168.1.64
+UPDATE users SET name = 'updated' WHERE id = 655,analyst,10.0.0.34
+SELECT a.id, b.name FROM sessions a JOIN inventory b ON a.id = b.id WHERE a.id > 603,bob,192.168.1.32
+SELECT * FROM orders WHERE id > 32 AND id < 938,admin,192.168.1.59
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 6,guest,10.0.0.37
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4022,bob,192.168.1.18
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,svc,10.0.0.47
+UPDATE orders SET name = 'updated' WHERE id = 460,alice,192.168.1.18
+SELECT a.id, b.name FROM notifications a JOIN payments b ON a.id = b.id WHERE a.id > 355,ops,10.0.0.24
+SELECT a.id, b.name FROM orders a JOIN sessions b ON a.id = b.id WHERE a.id > 485,ops,192.168.1.44
+SELECT * FROM inventory WHERE id > 799 AND id < 960,charlie,192.168.1.69
+SELECT a.id, b.name FROM reviews a JOIN logs b ON a.id = b.id WHERE a.id > 626,ops,192.168.1.68
+UPDATE orders SET name = 'updated' WHERE id = 52,guest,192.168.1.14
+SELECT * FROM users WHERE id > 373 AND id < 984,guest,192.168.1.34
+SELECT email FROM inventory WHERE id=234,dev,192.168.1.74
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,guest,10.0.0.21
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3081,alice,10.0.0.25
+INSERT INTO inventory (id, name) VALUES (429, 'test_user'),admin,192.168.1.12
+SELECT price FROM logs WHERE id=396,charlie,192.168.1.42
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,10.0.0.14
+SELECT created_at FROM orders WHERE id=802,charlie,10.0.0.10
+SELECT a.id, b.name FROM orders a JOIN payments b ON a.id = b.id WHERE a.id > 390,analyst,10.0.0.45
+SELECT email FROM orders WHERE id=221,analyst,192.168.1.33
+SELECT user_id FROM payments WHERE id=912,dev,192.168.1.22
+SELECT a.id, b.name FROM orders a JOIN reviews b ON a.id = b.id WHERE a.id > 549,alice,192.168.1.11
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 7,analyst,192.168.1.22
+SELECT id FROM logs WHERE id=147,dev,192.168.1.47
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 468,alice,192.168.1.50
+SELECT * FROM products WHERE id > 128 AND id < 1052,dev,192.168.1.21
+DELETE FROM logs WHERE id = 553,charlie,10.0.0.7
+SELECT * FROM payments ORDER BY created_at DESC LIMIT 27,analyst,192.168.1.38
+SELECT a.id, b.name FROM reviews a JOIN sessions b ON a.id = b.id WHERE a.id > 427,ops,10.0.0.43
+DELETE FROM inventory WHERE id = 803,dev,10.0.0.17
+SELECT a.id, b.name FROM orders a JOIN sessions b ON a.id = b.id WHERE a.id > 695,alice,192.168.1.24
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,10.0.0.48
+UPDATE inventory SET name = 'updated' WHERE id = 888,alice,192.168.1.47
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 49,guest,192.168.1.42
+SELECT * FROM users WHERE id > 867 AND id < 1031,dev,192.168.1.48
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3701,ops,10.0.0.1
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,192.168.1.29
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2969,svc,192.168.1.56
+DELETE FROM notifications WHERE id = 182,dev,192.168.1.51
+UPDATE sessions SET name = 'updated' WHERE id = 796,analyst,10.0.0.6
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,ops,192.168.1.36
+SELECT amount FROM orders WHERE id=864,charlie,10.0.0.13
+SELECT status FROM logs WHERE id=898,admin,10.0.0.12
+SELECT * FROM sessions WHERE id > 114 AND id < 830,analyst,192.168.1.48
+SELECT name FROM notifications WHERE id=598,charlie,192.168.1.41
+SELECT * FROM payments WHERE id > 442 AND id < 916,alice,10.0.0.35
+SELECT * FROM payments WHERE id > 3 AND id < 1071,analyst,10.0.0.35
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,bob,192.168.1.18
+DELETE FROM users WHERE id = 920,admin,192.168.1.72
+SELECT * FROM sessions WHERE id > 747 AND id < 979,ops,192.168.1.70
+SELECT * FROM logs WHERE id > 762 AND id < 651,svc,192.168.1.72
+INSERT INTO inventory (id, name) VALUES (62, 'test_user'),dev,10.0.0.30
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,svc,192.168.1.68
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 30,charlie,192.168.1.12
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3104,bob,192.168.1.29
+SELECT a.id, b.name FROM orders a JOIN orders b ON a.id = b.id WHERE a.id > 230,dev,192.168.1.54
+SELECT price FROM products WHERE id=658,bob,192.168.1.79
+SELECT id FROM products WHERE id=261,dev,192.168.1.25
+SELECT a.id, b.name FROM orders a JOIN sessions b ON a.id = b.id WHERE a.id > 550,bob,10.0.0.9
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2004,analyst,10.0.0.30
+SELECT price FROM inventory WHERE id=343,ops,192.168.1.53
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4751,analyst,192.168.1.43
+SELECT name FROM inventory WHERE id=216,bob,192.168.1.40
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 20,svc,192.168.1.30
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 40,dev,192.168.1.53
+UPDATE users SET name = 'updated' WHERE id = 473,bob,192.168.1.54
+SELECT a.id, b.name FROM sessions a JOIN inventory b ON a.id = b.id WHERE a.id > 26,dev,10.0.0.12
+INSERT INTO inventory (id, name) VALUES (612, 'test_user'),alice,192.168.1.10
+SELECT name FROM notifications WHERE id=252,ops,192.168.1.19
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 12,alice,10.0.0.7
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 32,guest,192.168.1.33
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 7,svc,10.0.0.3
+INSERT INTO reviews (id, name) VALUES (844, 'test_user'),charlie,192.168.1.74
+SELECT price FROM reviews WHERE id=960,bob,10.0.0.27
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,guest,192.168.1.79
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,admin,192.168.1.54
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 3,guest,192.168.1.28
+SELECT amount FROM reviews WHERE id=101,admin,192.168.1.35
+SELECT name FROM users WHERE id=110,svc,192.168.1.12
+INSERT INTO notifications (id, name) VALUES (330, 'test_user'),guest,192.168.1.26
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4245,admin,10.0.0.30
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,10.0.0.22
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,ops,10.0.0.5
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2194,alice,192.168.1.34
+UPDATE payments SET name = 'updated' WHERE id = 659,dev,10.0.0.41
+SELECT a.id, b.name FROM logs a JOIN logs b ON a.id = b.id WHERE a.id > 222,dev,192.168.1.18
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,ops,192.168.1.14
+DELETE FROM payments WHERE id = 39,ops,192.168.1.12
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,admin,10.0.0.31
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1681,ops,10.0.0.8
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 10,dev,192.168.1.21
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 26,alice,192.168.1.15
+INSERT INTO reviews (id, name) VALUES (896, 'test_user'),ops,192.168.1.62
+SELECT * FROM logs WHERE id > 256 AND id < 667,charlie,10.0.0.16
+INSERT INTO sessions (id, name) VALUES (439, 'test_user'),charlie,10.0.0.38
+SELECT price FROM users WHERE id=359,bob,192.168.1.42
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1506,admin,10.0.0.31
+SELECT stock FROM notifications WHERE id=395,guest,192.168.1.77
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4042,svc,192.168.1.21
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 999,svc,10.0.0.15
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,10.0.0.4
+SELECT price FROM reviews WHERE id=600,bob,192.168.1.40
+SELECT * FROM users WHERE id > 554 AND id < 175,dev,192.168.1.70
+SELECT * FROM reviews WHERE id > 680 AND id < 366,guest,192.168.1.15
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1217,svc,10.0.0.9
+INSERT INTO sessions (id, name) VALUES (515, 'test_user'),ops,192.168.1.39
+SELECT a.id, b.name FROM logs a JOIN notifications b ON a.id = b.id WHERE a.id > 83,analyst,10.0.0.30
+SELECT a.id, b.name FROM reviews a JOIN notifications b ON a.id = b.id WHERE a.id > 494,dev,192.168.1.24
+SELECT * FROM users ORDER BY created_at DESC LIMIT 28,svc,10.0.0.35
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,192.168.1.18
+SELECT * FROM users WHERE id > 834 AND id < 269,analyst,10.0.0.42
+SELECT * FROM reviews WHERE id > 735 AND id < 545,admin,10.0.0.47
+SELECT id FROM users WHERE id=195,alice,10.0.0.46
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 39,analyst,192.168.1.27
+SELECT * FROM notifications WHERE id > 810 AND id < 1083,bob,192.168.1.52
+INSERT INTO inventory (id, name) VALUES (95, 'test_user'),svc,10.0.0.10
+SELECT a.id, b.name FROM products a JOIN inventory b ON a.id = b.id WHERE a.id > 975,charlie,10.0.0.32
+SELECT created_at FROM notifications WHERE id=661,charlie,192.168.1.41
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 10,ops,192.168.1.40
+SELECT * FROM users ORDER BY created_at DESC LIMIT 19,charlie,10.0.0.14
+DELETE FROM products WHERE id = 764,analyst,10.0.0.10
+SELECT * FROM users WHERE id > 768 AND id < 435,bob,10.0.0.22
+SELECT * FROM notifications WHERE id > 898 AND id < 175,ops,192.168.1.62
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3307,admin,192.168.1.47
+SELECT a.id, b.name FROM sessions a JOIN inventory b ON a.id = b.id WHERE a.id > 883,analyst,192.168.1.43
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 895,charlie,10.0.0.19
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,svc,10.0.0.11
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,analyst,192.168.1.71
+UPDATE reviews SET name = 'updated' WHERE id = 655,charlie,192.168.1.74
+SELECT * FROM products ORDER BY created_at DESC LIMIT 14,charlie,10.0.0.34
+INSERT INTO sessions (id, name) VALUES (723, 'test_user'),bob,192.168.1.37
+SELECT a.id, b.name FROM reviews a JOIN users b ON a.id = b.id WHERE a.id > 949,charlie,192.168.1.39
+UPDATE reviews SET name = 'updated' WHERE id = 735,guest,10.0.0.5
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,192.168.1.28
+SELECT * FROM users ORDER BY created_at DESC LIMIT 46,alice,192.168.1.63
+SELECT * FROM sessions WHERE id > 394 AND id < 1070,bob,10.0.0.45
+SELECT name FROM sessions WHERE id=674,guest,192.168.1.70
+UPDATE orders SET name = 'updated' WHERE id = 74,charlie,192.168.1.14
+SELECT a.id, b.name FROM sessions a JOIN inventory b ON a.id = b.id WHERE a.id > 66,guest,192.168.1.75
+INSERT INTO notifications (id, name) VALUES (689, 'test_user'),bob,192.168.1.53
+SELECT amount FROM payments WHERE id=2,admin,10.0.0.21
+DELETE FROM logs WHERE id = 55,ops,192.168.1.22
+SELECT a.id, b.name FROM inventory a JOIN notifications b ON a.id = b.id WHERE a.id > 443,alice,10.0.0.28
+DELETE FROM orders WHERE id = 609,admin,192.168.1.15
+SELECT a.id, b.name FROM reviews a JOIN payments b ON a.id = b.id WHERE a.id > 534,guest,192.168.1.37
+UPDATE reviews SET name = 'updated' WHERE id = 290,charlie,192.168.1.69
+SELECT a.id, b.name FROM sessions a JOIN reviews b ON a.id = b.id WHERE a.id > 76,dev,192.168.1.27
+SELECT a.id, b.name FROM reviews a JOIN sessions b ON a.id = b.id WHERE a.id > 419,alice,192.168.1.12
+SELECT * FROM users ORDER BY created_at DESC LIMIT 49,ops,192.168.1.52
+SELECT a.id, b.name FROM inventory a JOIN users b ON a.id = b.id WHERE a.id > 241,charlie,192.168.1.72
+DELETE FROM sessions WHERE id = 974,analyst,10.0.0.41
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,guest,10.0.0.11
+SELECT * FROM products ORDER BY created_at DESC LIMIT 18,bob,192.168.1.11
+SELECT a.id, b.name FROM reviews a JOIN products b ON a.id = b.id WHERE a.id > 584,admin,10.0.0.43
+INSERT INTO products (id, name) VALUES (225, 'test_user'),bob,192.168.1.30
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2444,guest,192.168.1.48
+INSERT INTO payments (id, name) VALUES (271, 'test_user'),admin,192.168.1.38
+SELECT id FROM orders WHERE id=833,charlie,192.168.1.45
+SELECT * FROM users ORDER BY created_at DESC LIMIT 41,charlie,192.168.1.68
+SELECT status FROM orders WHERE id=477,bob,192.168.1.79
+SELECT stock FROM products WHERE id=583,bob,192.168.1.66
+SELECT id FROM products WHERE id=198,guest,10.0.0.32
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 446,bob,10.0.0.25
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4567,ops,10.0.0.24
+SELECT a.id, b.name FROM notifications a JOIN logs b ON a.id = b.id WHERE a.id > 983,ops,10.0.0.13
+SELECT status FROM sessions WHERE id=822,charlie,10.0.0.30
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 194,dev,192.168.1.16
+SELECT status FROM inventory WHERE id=551,guest,192.168.1.64
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,10.0.0.45
+DELETE FROM payments WHERE id = 169,svc,192.168.1.19
+SELECT amount FROM payments WHERE id=8,ops,10.0.0.23
+UPDATE notifications SET name = 'updated' WHERE id = 763,alice,192.168.1.35
+SELECT amount FROM reviews WHERE id=332,guest,192.168.1.45
+SELECT price FROM notifications WHERE id=610,ops,192.168.1.13
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,charlie,192.168.1.52
+SELECT a.id, b.name FROM payments a JOIN sessions b ON a.id = b.id WHERE a.id > 479,guest,192.168.1.74
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 96,ops,10.0.0.25
+INSERT INTO products (id, name) VALUES (574, 'test_user'),admin,10.0.0.19
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,guest,192.168.1.19
+SELECT user_id FROM inventory WHERE id=695,guest,192.168.1.71
+SELECT a.id, b.name FROM payments a JOIN inventory b ON a.id = b.id WHERE a.id > 522,svc,10.0.0.10
+SELECT user_id FROM notifications WHERE id=866,alice,10.0.0.36
+SELECT * FROM users WHERE id > 78 AND id < 431,alice,192.168.1.14
+INSERT INTO payments (id, name) VALUES (885, 'test_user'),admin,10.0.0.22
+INSERT INTO orders (id, name) VALUES (180, 'test_user'),admin,192.168.1.42
+SELECT a.id, b.name FROM notifications a JOIN orders b ON a.id = b.id WHERE a.id > 743,bob,192.168.1.38
+SELECT a.id, b.name FROM notifications a JOIN payments b ON a.id = b.id WHERE a.id > 668,ops,10.0.0.42
+SELECT * FROM payments WHERE id > 969 AND id < 691,charlie,192.168.1.32
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 28,svc,192.168.1.54
+UPDATE users SET name = 'updated' WHERE id = 293,guest,192.168.1.30
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4436,ops,10.0.0.5
+INSERT INTO sessions (id, name) VALUES (503, 'test_user'),charlie,192.168.1.48
+SELECT a.id, b.name FROM users a JOIN orders b ON a.id = b.id WHERE a.id > 816,guest,192.168.1.34
+INSERT INTO inventory (id, name) VALUES (898, 'test_user'),bob,10.0.0.24
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,admin,10.0.0.15
+SELECT a.id, b.name FROM notifications a JOIN payments b ON a.id = b.id WHERE a.id > 23,charlie,192.168.1.17
+SELECT a.id, b.name FROM sessions a JOIN logs b ON a.id = b.id WHERE a.id > 302,analyst,192.168.1.12
+UPDATE reviews SET name = 'updated' WHERE id = 740,ops,10.0.0.33
+INSERT INTO inventory (id, name) VALUES (196, 'test_user'),guest,192.168.1.14
+SELECT email FROM inventory WHERE id=752,dev,192.168.1.47
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,10.0.0.41
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4487,analyst,10.0.0.45
+SELECT * FROM reviews ORDER BY created_at DESC LIMIT 17,ops,10.0.0.40
+INSERT INTO reviews (id, name) VALUES (137, 'test_user'),bob,10.0.0.47
+DELETE FROM inventory WHERE id = 386,guest,10.0.0.22
+SELECT a.id, b.name FROM products a JOIN orders b ON a.id = b.id WHERE a.id > 519,ops,192.168.1.49
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 4,dev,192.168.1.59
+SELECT a.id, b.name FROM products a JOIN products b ON a.id = b.id WHERE a.id > 510,svc,10.0.0.2
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 9,ops,10.0.0.33
+SELECT a.id, b.name FROM logs a JOIN inventory b ON a.id = b.id WHERE a.id > 126,ops,192.168.1.75
+UPDATE inventory SET name = 'updated' WHERE id = 703,analyst,10.0.0.19
+SELECT a.id, b.name FROM users a JOIN sessions b ON a.id = b.id WHERE a.id > 322,alice,192.168.1.55
+SELECT a.id, b.name FROM logs a JOIN payments b ON a.id = b.id WHERE a.id > 138,svc,192.168.1.20
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 368,bob,192.168.1.10
+UPDATE orders SET name = 'updated' WHERE id = 505,dev,10.0.0.18
+SELECT a.id, b.name FROM sessions a JOIN users b ON a.id = b.id WHERE a.id > 185,charlie,10.0.0.35
+UPDATE notifications SET name = 'updated' WHERE id = 754,alice,192.168.1.61
+SELECT a.id, b.name FROM inventory a JOIN logs b ON a.id = b.id WHERE a.id > 834,dev,192.168.1.73
+SELECT id FROM reviews WHERE id=38,guest,10.0.0.47
+SELECT * FROM reviews WHERE id > 359 AND id < 689,dev,10.0.0.39
+SELECT * FROM reviews ORDER BY created_at DESC LIMIT 27,dev,192.168.1.74
+DELETE FROM users WHERE id = 402,bob,10.0.0.44
+SELECT * FROM logs WHERE id > 934 AND id < 588,charlie,10.0.0.22
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,svc,192.168.1.62
+UPDATE reviews SET name = 'updated' WHERE id = 882,admin,10.0.0.17
+SELECT a.id, b.name FROM inventory a JOIN notifications b ON a.id = b.id WHERE a.id > 585,guest,192.168.1.54
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 34,admin,192.168.1.40
+SELECT * FROM users WHERE id > 924 AND id < 820,bob,192.168.1.58
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2163,charlie,10.0.0.20
+DELETE FROM users WHERE id = 632,charlie,192.168.1.27
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 282,alice,10.0.0.25
+SELECT email FROM reviews WHERE id=34,bob,10.0.0.46
+UPDATE sessions SET name = 'updated' WHERE id = 256,ops,192.168.1.19
+SELECT created_at FROM sessions WHERE id=525,ops,192.168.1.36
+SELECT * FROM orders WHERE id > 683 AND id < 315,guest,192.168.1.40
+SELECT a.id, b.name FROM reviews a JOIN reviews b ON a.id = b.id WHERE a.id > 737,svc,192.168.1.72
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1008,analyst,192.168.1.50
+SELECT a.id, b.name FROM reviews a JOIN sessions b ON a.id = b.id WHERE a.id > 705,guest,192.168.1.47
+UPDATE orders SET name = 'updated' WHERE id = 115,dev,192.168.1.39
+UPDATE inventory SET name = 'updated' WHERE id = 560,dev,10.0.0.27
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1913,analyst,192.168.1.38
+SELECT status FROM products WHERE id=941,admin,192.168.1.24
+INSERT INTO inventory (id, name) VALUES (867, 'test_user'),guest,10.0.0.46
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 47,charlie,192.168.1.50
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,10.0.0.31
+SELECT * FROM reviews ORDER BY created_at DESC LIMIT 36,bob,10.0.0.7
+SELECT email FROM notifications WHERE id=464,svc,10.0.0.30
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 45,dev,192.168.1.16
+SELECT * FROM payments ORDER BY created_at DESC LIMIT 36,charlie,10.0.0.45
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2666,charlie,10.0.0.10
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 3,analyst,10.0.0.2
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 50,svc,10.0.0.16
+DELETE FROM orders WHERE id = 180,dev,10.0.0.20
+UPDATE products SET name = 'updated' WHERE id = 94,charlie,192.168.1.75
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 6,guest,192.168.1.79
+SELECT * FROM orders WHERE id > 897 AND id < 775,alice,192.168.1.64
+DELETE FROM sessions WHERE id = 855,dev,192.168.1.78
+SELECT a.id, b.name FROM sessions a JOIN orders b ON a.id = b.id WHERE a.id > 846,dev,192.168.1.53
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,10.0.0.25
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,charlie,192.168.1.31
+SELECT a.id, b.name FROM notifications a JOIN payments b ON a.id = b.id WHERE a.id > 488,analyst,192.168.1.51
+SELECT amount FROM inventory WHERE id=548,admin,192.168.1.42
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4373,guest,10.0.0.20
+SELECT a.id, b.name FROM products a JOIN logs b ON a.id = b.id WHERE a.id > 539,guest,10.0.0.34
+SELECT * FROM notifications WHERE id > 315 AND id < 572,dev,192.168.1.50
+INSERT INTO products (id, name) VALUES (263, 'test_user'),analyst,10.0.0.40
+UPDATE notifications SET name = 'updated' WHERE id = 373,dev,192.168.1.42
+UPDATE inventory SET name = 'updated' WHERE id = 359,ops,10.0.0.10
+SELECT price FROM users WHERE id=685,dev,192.168.1.73
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,admin,10.0.0.12
+SELECT created_at FROM payments WHERE id=887,bob,10.0.0.33
+SELECT a.id, b.name FROM payments a JOIN payments b ON a.id = b.id WHERE a.id > 746,analyst,192.168.1.78
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 33,bob,192.168.1.66
+DELETE FROM notifications WHERE id = 9,analyst,10.0.0.38
+SELECT price FROM reviews WHERE id=550,ops,192.168.1.72
+SELECT * FROM payments WHERE id > 568 AND id < 787,dev,10.0.0.20
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,admin,10.0.0.40
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 1,bob,192.168.1.79
+UPDATE sessions SET name = 'updated' WHERE id = 561,alice,192.168.1.46
+SELECT status FROM sessions WHERE id=368,dev,10.0.0.34
+SELECT * FROM sessions WHERE id > 601 AND id < 390,bob,192.168.1.66
+SELECT * FROM notifications WHERE id > 455 AND id < 143,guest,10.0.0.16
+SELECT * FROM payments ORDER BY created_at DESC LIMIT 14,ops,192.168.1.11
+SELECT * FROM users WHERE id > 812 AND id < 1050,svc,192.168.1.28
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 26,admin,10.0.0.4
+SELECT a.id, b.name FROM payments a JOIN products b ON a.id = b.id WHERE a.id > 523,svc,10.0.0.22
+SELECT * FROM reviews ORDER BY created_at DESC LIMIT 29,bob,192.168.1.22
+INSERT INTO products (id, name) VALUES (346, 'test_user'),charlie,192.168.1.49
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 21,dev,192.168.1.30
+UPDATE orders SET name = 'updated' WHERE id = 547,ops,192.168.1.11
+SELECT * FROM inventory WHERE id > 57 AND id < 582,svc,192.168.1.38
+SELECT * FROM users ORDER BY created_at DESC LIMIT 47,ops,10.0.0.39
+SELECT * FROM products ORDER BY created_at DESC LIMIT 44,bob,192.168.1.18
+DELETE FROM users WHERE id = 996,dev,10.0.0.48
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 6,admin,192.168.1.66
+SELECT a.id, b.name FROM sessions a JOIN orders b ON a.id = b.id WHERE a.id > 126,bob,192.168.1.11
+SELECT stock FROM reviews WHERE id=868,charlie,10.0.0.5
+INSERT INTO users (id, name) VALUES (650, 'test_user'),alice,192.168.1.16
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 3,dev,192.168.1.44
+SELECT * FROM users WHERE id > 963 AND id < 338,ops,192.168.1.25
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,bob,10.0.0.37
+SELECT * FROM users ORDER BY created_at DESC LIMIT 34,svc,10.0.0.43
+INSERT INTO payments (id, name) VALUES (888, 'test_user'),svc,192.168.1.42
+UPDATE orders SET name = 'updated' WHERE id = 815,svc,192.168.1.28
+SELECT * FROM products ORDER BY created_at DESC LIMIT 24,admin,10.0.0.46
+SELECT a.id, b.name FROM reviews a JOIN products b ON a.id = b.id WHERE a.id > 545,ops,10.0.0.39
+SELECT * FROM reviews WHERE id > 141 AND id < 420,ops,10.0.0.47
+SELECT * FROM payments ORDER BY created_at DESC LIMIT 47,dev,192.168.1.56
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 10,dev,10.0.0.39
+SELECT amount FROM notifications WHERE id=32,alice,10.0.0.43
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 1,analyst,192.168.1.69
+SELECT stock FROM payments WHERE id=206,bob,192.168.1.35
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,charlie,192.168.1.23
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 9,svc,10.0.0.9
+SELECT * FROM notifications WHERE id > 232 AND id < 497,bob,10.0.0.43
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,ops,10.0.0.29
+SELECT * FROM reviews WHERE id > 97 AND id < 427,dev,192.168.1.79
+SELECT a.id, b.name FROM sessions a JOIN payments b ON a.id = b.id WHERE a.id > 799,ops,192.168.1.53
+SELECT email FROM products WHERE id=600,charlie,10.0.0.11
+SELECT * FROM logs WHERE id > 434 AND id < 318,dev,192.168.1.79
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,guest,192.168.1.69
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 22,svc,192.168.1.41
+SELECT * FROM inventory WHERE id > 189 AND id < 283,alice,192.168.1.47
+INSERT INTO payments (id, name) VALUES (119, 'test_user'),dev,192.168.1.19
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 7,admin,10.0.0.7
+SELECT * FROM notifications WHERE id > 476 AND id < 329,bob,192.168.1.28
+INSERT INTO inventory (id, name) VALUES (377, 'test_user'),analyst,192.168.1.49
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 6,alice,10.0.0.13
+SELECT * FROM inventory WHERE id > 93 AND id < 1034,svc,10.0.0.18
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 10,dev,10.0.0.1
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,guest,192.168.1.43
+SELECT created_at FROM notifications WHERE id=548,alice,192.168.1.32
+SELECT * FROM products ORDER BY created_at DESC LIMIT 49,guest,192.168.1.22
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 1,svc,10.0.0.15
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 6,dev,10.0.0.44
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 6,guest,192.168.1.31
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,10.0.0.43
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4166,admin,192.168.1.47
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 7,svc,10.0.0.29
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,guest,192.168.1.21
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1773,charlie,192.168.1.37
+SELECT * FROM notifications WHERE id > 602 AND id < 886,svc,192.168.1.52
+UPDATE inventory SET name = 'updated' WHERE id = 922,svc,192.168.1.26
+SELECT * FROM logs WHERE id > 274 AND id < 978,admin,192.168.1.77
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3245,svc,10.0.0.3
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 38,dev,10.0.0.12
+SELECT email FROM users WHERE id=862,bob,10.0.0.45
+SELECT a.id, b.name FROM logs a JOIN inventory b ON a.id = b.id WHERE a.id > 101,charlie,10.0.0.28
+SELECT a.id, b.name FROM logs a JOIN notifications b ON a.id = b.id WHERE a.id > 659,admin,10.0.0.3
+SELECT a.id, b.name FROM users a JOIN orders b ON a.id = b.id WHERE a.id > 574,admin,192.168.1.38
+DELETE FROM sessions WHERE id = 411,ops,10.0.0.28
+UPDATE reviews SET name = 'updated' WHERE id = 527,admin,10.0.0.36
+SELECT * FROM reviews WHERE id > 305 AND id < 508,bob,192.168.1.12
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,ops,192.168.1.59
+SELECT a.id, b.name FROM sessions a JOIN orders b ON a.id = b.id WHERE a.id > 608,analyst,192.168.1.68
+SELECT * FROM payments WHERE id > 99 AND id < 841,ops,192.168.1.55
+DELETE FROM inventory WHERE id = 439,svc,10.0.0.12
+SELECT * FROM products WHERE id > 622 AND id < 644,ops,10.0.0.45
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2684,bob,192.168.1.28
+SELECT created_at FROM logs WHERE id=303,dev,10.0.0.21
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 4,ops,192.168.1.62
+SELECT id FROM reviews WHERE id=849,admin,192.168.1.45
+SELECT user_id FROM products WHERE id=234,analyst,192.168.1.70
+SELECT email FROM notifications WHERE id=677,admin,10.0.0.48
+UPDATE sessions SET name = 'updated' WHERE id = 343,svc,10.0.0.43
+SELECT a.id, b.name FROM inventory a JOIN orders b ON a.id = b.id WHERE a.id > 424,guest,10.0.0.6
+SELECT * FROM reviews ORDER BY created_at DESC LIMIT 7,charlie,192.168.1.71
+SELECT * FROM notifications ORDER BY created_at DESC LIMIT 10,bob,192.168.1.35
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,guest,192.168.1.45
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3151,bob,192.168.1.28
+SELECT a.id, b.name FROM users a JOIN payments b ON a.id = b.id WHERE a.id > 628,dev,192.168.1.57
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,admin,192.168.1.13
+DELETE FROM users WHERE id = 381,bob,192.168.1.58
+SELECT name FROM users WHERE id=501,svc,10.0.0.35
+SELECT status FROM logs WHERE id=989,charlie,10.0.0.9
+SELECT a.id, b.name FROM logs a JOIN logs b ON a.id = b.id WHERE a.id > 484,dev,192.168.1.11
+INSERT INTO reviews (id, name) VALUES (243, 'test_user'),dev,192.168.1.46
+SELECT a.id, b.name FROM notifications a JOIN payments b ON a.id = b.id WHERE a.id > 340,bob,10.0.0.31
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,admin,192.168.1.65
+SELECT price FROM reviews WHERE id=541,admin,10.0.0.39
+SELECT price FROM orders WHERE id=710,analyst,10.0.0.28
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 8,dev,192.168.1.18
+INSERT INTO inventory (id, name) VALUES (990, 'test_user'),bob,192.168.1.14
+SELECT * FROM orders ORDER BY created_at DESC LIMIT 16,bob,192.168.1.34
+SELECT * FROM payments ORDER BY created_at DESC LIMIT 19,admin,10.0.0.37
+SELECT a.id, b.name FROM products a JOIN payments b ON a.id = b.id WHERE a.id > 712,analyst,10.0.0.26
+SELECT id FROM reviews WHERE id=669,analyst,192.168.1.38
+SELECT status FROM users WHERE id=967,dev,10.0.0.42
+SELECT * FROM orders WHERE id > 939 AND id < 749,bob,192.168.1.29
+UPDATE logs SET name = 'updated' WHERE id = 900,analyst,192.168.1.41
+UPDATE orders SET name = 'updated' WHERE id = 950,alice,192.168.1.74
+INSERT INTO notifications (id, name) VALUES (918, 'test_user'),bob,192.168.1.74
+INSERT INTO inventory (id, name) VALUES (229, 'test_user'),bob,192.168.1.35
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 20,analyst,192.168.1.39
+SELECT user_id FROM orders WHERE id=921,alice,10.0.0.15
+SELECT * FROM reviews WHERE id > 938 AND id < 198,dev,192.168.1.25
+SELECT * FROM sessions WHERE id > 941 AND id < 161,dev,192.168.1.45
+SELECT * FROM reviews WHERE id > 16 AND id < 156,bob,10.0.0.41
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 17,admin,10.0.0.40
+SELECT name FROM payments WHERE id=726,ops,10.0.0.27
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,alice,192.168.1.17
+SELECT * FROM reviews ORDER BY created_at DESC LIMIT 30,svc,192.168.1.28
+SELECT amount FROM inventory WHERE id=798,alice,10.0.0.19
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,charlie,10.0.0.21
+SELECT price FROM inventory WHERE id=226,dev,10.0.0.33
+SELECT a.id, b.name FROM inventory a JOIN notifications b ON a.id = b.id WHERE a.id > 278,charlie,192.168.1.13
+SELECT * FROM logs WHERE id > 917 AND id < 964,guest,192.168.1.28
+DELETE FROM sessions WHERE id = 208,admin,10.0.0.12
+SELECT created_at FROM logs WHERE id=505,guest,10.0.0.20
+SELECT * FROM sessions WHERE id > 707 AND id < 723,alice,10.0.0.16
+UPDATE reviews SET name = 'updated' WHERE id = 769,charlie,192.168.1.35
+SELECT a.id, b.name FROM logs a JOIN reviews b ON a.id = b.id WHERE a.id > 255,charlie,192.168.1.58
+INSERT INTO notifications (id, name) VALUES (646, 'test_user'),guest,192.168.1.15
+DELETE FROM notifications WHERE id = 889,svc,192.168.1.52
+DELETE FROM users WHERE id = 48,svc,192.168.1.28
+SELECT a.id, b.name FROM notifications a JOIN logs b ON a.id = b.id WHERE a.id > 874,guest,192.168.1.25
+SELECT * FROM inventory WHERE id > 648 AND id < 835,dev,10.0.0.7
+SELECT * FROM sessions ORDER BY created_at DESC LIMIT 22,ops,10.0.0.32
+DELETE FROM orders WHERE id = 309,charlie,192.168.1.72
+SELECT price FROM logs WHERE id=125,guest,10.0.0.22
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 412,charlie,192.168.1.65
+SELECT a.id, b.name FROM inventory a JOIN logs b ON a.id = b.id WHERE a.id > 248,dev,10.0.0.18
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1760,svc,192.168.1.31
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 2,bob,10.0.0.47
+INSERT INTO products (id, name) VALUES (453, 'test_user'),admin,192.168.1.52
+UPDATE users SET name = 'updated' WHERE id = 679,svc,192.168.1.15
+SELECT a.id, b.name FROM orders a JOIN notifications b ON a.id = b.id WHERE a.id > 433,ops,10.0.0.27
+DELETE FROM reviews WHERE id = 326,alice,10.0.0.2
+SELECT * FROM payments ORDER BY created_at DESC LIMIT 46,bob,192.168.1.30
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 4,dev,192.168.1.61
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,admin,10.0.0.19
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,192.168.1.58
+SELECT a.id, b.name FROM logs a JOIN users b ON a.id = b.id WHERE a.id > 759,guest,10.0.0.33
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1537,admin,192.168.1.75
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,10.0.0.23
+UPDATE reviews SET name = 'updated' WHERE id = 465,dev,192.168.1.71
+SELECT a.id, b.name FROM products a JOIN payments b ON a.id = b.id WHERE a.id > 774,svc,10.0.0.21
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2969,alice,192.168.1.25
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,192.168.1.48
+SELECT a.id, b.name FROM orders a JOIN logs b ON a.id = b.id WHERE a.id > 769,alice,10.0.0.34
+SELECT price FROM reviews WHERE id=208,dev,192.168.1.45
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 211,bob,192.168.1.18
+SELECT * FROM sessions WHERE id > 916 AND id < 634,dev,10.0.0.37
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4670,dev,192.168.1.10
+SELECT * FROM reviews ORDER BY created_at DESC LIMIT 42,guest,192.168.1.72
+SELECT * FROM reviews ORDER BY created_at DESC LIMIT 40,alice,192.168.1.25
+SELECT created_at FROM payments WHERE id=116,admin,192.168.1.24
+SELECT user_id FROM logs WHERE id=4,ops,10.0.0.47
+SELECT a.id, b.name FROM inventory a JOIN orders b ON a.id = b.id WHERE a.id > 32,admin,10.0.0.21
+DELETE FROM products WHERE id = 834,ops,192.168.1.71
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,ops,192.168.1.51
+SELECT a.id, b.name FROM orders a JOIN users b ON a.id = b.id WHERE a.id > 971,svc,192.168.1.35
+SELECT * FROM orders WHERE id > 287 AND id < 869,dev,192.168.1.68
+SELECT * FROM payments WHERE id > 69 AND id < 404,alice,192.168.1.63
+UPDATE logs SET name = 'updated' WHERE id = 140,admin,10.0.0.16
+SELECT * FROM sessions WHERE id > 217 AND id < 262,bob,10.0.0.31
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,guest,192.168.1.30
+SELECT a.id, b.name FROM notifications a JOIN products b ON a.id = b.id WHERE a.id > 928,guest,192.168.1.36
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1476,alice,192.168.1.60
+SELECT a.id, b.name FROM inventory a JOIN orders b ON a.id = b.id WHERE a.id > 488,bob,192.168.1.13
+SELECT * FROM users WHERE id > 556 AND id < 568,charlie,192.168.1.21
+SELECT amount FROM orders WHERE id=12,ops,192.168.1.35
+INSERT INTO products (id, name) VALUES (407, 'test_user'),bob,10.0.0.12
+SELECT name FROM orders WHERE id=465,bob,192.168.1.46
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,bob,10.0.0.41
+SELECT * FROM notifications WHERE id > 199 AND id < 444,ops,10.0.0.13
+SELECT * FROM payments WHERE id > 423 AND id < 348,bob,192.168.1.36
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,dev,10.0.0.22
+SELECT * FROM users ORDER BY created_at DESC LIMIT 19,ops,192.168.1.14
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,bob,192.168.1.32
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,ops,10.0.0.35
+INSERT INTO inventory (id, name) VALUES (22, 'test_user'),analyst,192.168.1.53
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 4322,svc,10.0.0.44
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,admin,10.0.0.25
+SELECT a.id, b.name FROM payments a JOIN payments b ON a.id = b.id WHERE a.id > 769,bob,192.168.1.31
+SELECT a.id, b.name FROM logs a JOIN products b ON a.id = b.id WHERE a.id > 812,admin,10.0.0.18
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,bob,192.168.1.73
+INSERT INTO sessions (id, name) VALUES (599, 'test_user'),svc,192.168.1.53
+SELECT a.id, b.name FROM notifications a JOIN notifications b ON a.id = b.id WHERE a.id > 121,admin,192.168.1.36
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 9,ops,10.0.0.22
+SELECT * FROM products WHERE id > 500 AND id < 818,admin,192.168.1.32
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 5,analyst,10.0.0.48
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,charlie,192.168.1.73
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1407,ops,192.168.1.67
+SELECT a.id, b.name FROM reviews a JOIN reviews b ON a.id = b.id WHERE a.id > 848,analyst,192.168.1.41
+SELECT * FROM users ORDER BY created_at DESC LIMIT 42,guest,192.168.1.50
+SELECT * FROM inventory ORDER BY created_at DESC LIMIT 27,analyst,192.168.1.68
+SELECT a.id, b.name FROM payments a JOIN logs b ON a.id = b.id WHERE a.id > 935,analyst,192.168.1.62
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 8,charlie,192.168.1.29
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,analyst,192.168.1.72
+SELECT a.id, b.name FROM inventory a JOIN users b ON a.id = b.id WHERE a.id > 409,svc,192.168.1.71
+INSERT INTO payments (id, name) VALUES (641, 'test_user'),analyst,192.168.1.70
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 10,bob,192.168.1.47
+SELECT email FROM users WHERE id=702,dev,10.0.0.4
+SELECT a.id, b.name FROM users a JOIN sessions b ON a.id = b.id WHERE a.id > 880,ops,192.168.1.13
+SELECT amount FROM orders WHERE id=161,alice,10.0.0.36
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id,admin,10.0.0.3
+INSERT INTO inventory (id, name) VALUES (819, 'test_user'),charlie,192.168.1.75
+SELECT * FROM products ORDER BY created_at DESC LIMIT 28,bob,192.168.1.43
+DELETE FROM users WHERE id = 633,bob,192.168.1.49
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 7,ops,192.168.1.23
+SELECT * FROM reviews ORDER BY created_at DESC LIMIT 20,dev,10.0.0.40
+SELECT email FROM logs WHERE id=441,charlie,192.168.1.51
+SELECT * FROM products WHERE id > 663 AND id < 806,charlie,10.0.0.25
+SELECT status FROM logs WHERE id=10,analyst,10.0.0.18
+SELECT created_at FROM users WHERE id=568,bob,10.0.0.36
+SELECT a.id, b.name FROM products a JOIN reviews b ON a.id = b.id WHERE a.id > 534,svc,192.168.1.30
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 2963,svc,192.168.1.18
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 1320,ops,192.168.1.52
+SELECT email FROM sessions WHERE id=857,charlie,10.0.0.40
+INSERT INTO sessions (id, name) VALUES (442, 'test_user'),alice,192.168.1.11
+SELECT a.id, b.name FROM payments a JOIN logs b ON a.id = b.id WHERE a.id > 299,alice,10.0.0.22
+SELECT amount FROM users WHERE id=301,admin,10.0.0.1
+UPDATE payments SET name = 'updated' WHERE id = 220,guest,192.168.1.23
+INSERT INTO reviews (id, name) VALUES (698, 'test_user'),svc,10.0.0.32
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 3374,svc,10.0.0.45
+INSERT INTO reviews (id, name) VALUES (846, 'test_user'),guest,192.168.1.52
+SELECT * FROM payments WHERE id > 826 AND id < 426,charlie,10.0.0.11
+UPDATE orders SET name = 'updated' WHERE id = 608,bob,192.168.1.29
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 4,alice,10.0.0.19
+SELECT price FROM products WHERE id=892,alice,192.168.1.65
+SELECT stock FROM orders WHERE id=892,charlie,10.0.0.7
+SELECT user_id, COUNT(*) as cnt FROM orders GROUP BY user_id HAVING COUNT(*) > 1,svc,192.168.1.31
+SELECT * FROM products ORDER BY created_at DESC LIMIT 30,charlie,10.0.0.23
+SELECT * FROM logs ORDER BY created_at DESC LIMIT 16,svc,10.0.0.24
+INSERT INTO notifications (id, name) VALUES (361, 'test_user'),alice,192.168.1.41
+SELECT stock FROM payments WHERE id=941,bob,10.0.0.4
+SELECT * FROM logs WHERE id > 126 AND id < 524,guest,192.168.1.62
+SELECT u.id, o.amount FROM users u JOIN orders o ON u.id = o.user_id WHERE o.amount > 746,guest,192.168.1.50

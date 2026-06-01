@@ -1,0 +1,6 @@
+{
+  "threshold_suggested": 0.0007614169735461473,
+  "train_error_mean": 0.0003652535961009562,
+  "train_error_std": 0.00019808168872259557,
+  "n_samples": 38
+}
