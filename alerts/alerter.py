@@ -28,6 +28,8 @@ def _send_email(subject: str, body_html: str):
         msg["To"] = ALERT_TO
 
         msg.attach(MIMEText(body_html, "html"))
+        print("SMTP_HOST =", SMTP_HOST)
+        print("SMTP_PORT =", SMTP_PORT)
 
         with smtplib.SMTP(SMTP_HOST, SMTP_PORT, timeout=10) as server:
             server.ehlo()
