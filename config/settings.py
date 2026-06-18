@@ -22,7 +22,7 @@ INPUT_DIM = 16  # feature vector size
 SMTP_HOST = os.getenv("SMTP_HOST", "smtp.gmail.com")
 SMTP_PORT = int(os.getenv("SMTP_PORT", 587))
 SMTP_USER = os.getenv("SMTP_USER", "himanshukori947@gmail.com")
-SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "qbvo wygp ranz doiz")
+SMTP_PASSWORD = os.getenv("SMTP_PASSWORD", "wdqt pkln pudn lvmi")
 ALERT_TO = os.getenv("ALERT_TO", "himanshukori947@gmail.com")
 
 # ── Sensitive Tables ──────────────────────────────────────
