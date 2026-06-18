@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import pandas as pd
 
-API_URL = "https://ai-db-idps.onrender.com"
+API_URL = "https://ai-db-idps-77hv.onrender.com"
 
 st.set_page_config(layout="wide")
 st.title("🛡️ AI-DB-IDPS Dashboard")
