@@ -31,11 +31,30 @@ def _send_email(subject: str, body_html: str):
         print("SMTP_HOST =", SMTP_HOST)
         print("SMTP_PORT =", SMTP_PORT)
 
-        with smtplib.SMTP_SSL(SMTP_HOST, 465, timeout=60) as server:
-          server.login(SMTP_USER, SMTP_PASSWORD)
-          server.sendmail(SMTP_USER, ALERT_TO, msg.as_string())
+        print("STEP 1: Creating SMTP connection")
 
-        print(f"[Alert] Email sent to {ALERT_TO}")
+        with smtplib.SMTP(SMTP_HOST, SMTP_PORT, timeout=30) as server:
+          print("STEP 2: EHLO")
+          server.ehlo()
+          print("STEP 3: STARTTLS")
+          server.starttls()
+
+          print("STEP 4: EHLO AGAIN")
+          server.ehlo()
+
+          print("STEP 5: LOGIN")
+          server.login(SMTP_USER, SMTP_PASSWORD)
+
+          print("STEP 6: SENDMAIL")
+          server.sendmail(
+            SMTP_USER,
+            ALERT_TO,
+            msg.as_string()
+          )
+
+          print("STEP 7: SUCCESS")
+
+          print(f"[Alert] Email sent to {ALERT_TO}")
 
     except Exception as e:
         print(f"[Alert] Failed to send email: {e}")
