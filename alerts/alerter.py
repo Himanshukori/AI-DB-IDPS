@@ -31,7 +31,7 @@ def _send_email(subject: str, body_html: str):
         print("SMTP_HOST =", SMTP_HOST)
         print("SMTP_PORT =", SMTP_PORT)
 
-        with smtplib.SMTP_SSL(SMTP_HOST, 465, timeout=10) as server:
+        with smtplib.SMTP_SSL(SMTP_HOST, 465, timeout=60) as server:
           server.login(SMTP_USER, SMTP_PASSWORD)
           server.sendmail(SMTP_USER, ALERT_TO, msg.as_string())
 
